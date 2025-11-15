@@ -1,9 +1,56 @@
-[gd_scene load_steps=2 format=3 uid="uid://jyls84pp8xcd"]
+[gd_scene load_steps=9 format=3 uid="uid://jyls84pp8xcd"]
 
 [ext_resource type="PackedScene" uid="uid://bpsrjjj60rfai" path="res://Shadowbound_assets.blend" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://cldbhk80vvyf3" path="res://player.gd" id="2_0xm2m"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ig7tw"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_0xm2m"]
+sky_material = SubResource("ProceduralSkyMaterial_ig7tw")
+
+[sub_resource type="Environment" id="Environment_h2yge"]
+background_mode = 2
+sky = SubResource("Sky_0xm2m")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1bvp3"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lquwl"]
+
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_ig7tw"]
 
 [node name="Node3D" type="Node3D" unique_id=1526244692]
 
-[node name="Shadowbound_assets" parent="." unique_id=1440526347 instance=ExtResource("1_ig7tw")]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1684818334]
+environment = SubResource("Environment_h2yge")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=338103326]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Shadowbound_assets" parent="." unique_id=1379760383 instance=ExtResource("1_ig7tw")]
+
+[node name="statue_boolean_holecutter" parent="Shadowbound_assets" index="9" unique_id=774960347]
+visible = false
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=2019006762]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2014594, -28.991472)
+script = ExtResource("2_0xm2m")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1156228777]
+mesh = SubResource("CapsuleMesh_1bvp3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1605874166]
+shape = SubResource("CapsuleShape3D_lquwl")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="Player" unique_id=1196279278]
+transform = Transform3D(1, 0, 0, 0, 0.90630776, 0.42261827, 0, -0.42261827, 0.90630776, 0, 0, 0)
+shape = SubResource("SeparationRayShape3D_ig7tw")
+spring_length = 4.0
+
+[node name="Camera3D" type="Camera3D" parent="Player/SpringArm3D" unique_id=2116706578]
 
 [editable path="Shadowbound_assets"]
