@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://jyls84pp8xcd"]
+
+[ext_resource type="PackedScene" uid="uid://bpsrjjj60rfai" path="res://Shadowbound_assets.blend" id="1_ig7tw"]
+
+[node name="Node3D" type="Node3D" unique_id=1526244692]
+
+[node name="Shadowbound_assets" parent="." unique_id=1440526347 instance=ExtResource("1_ig7tw")]
+
+[editable path="Shadowbound_assets"]
