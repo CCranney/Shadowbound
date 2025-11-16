@@ -1,7 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://jyls84pp8xcd"]
+[gd_scene load_steps=17 format=3 uid="uid://jyls84pp8xcd"]
 
 [ext_resource type="PackedScene" uid="uid://bpsrjjj60rfai" path="res://Shadowbound_assets.blend" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://b1ip3x0xeaqrb" path="res://main.gd" id="1_lquwl"]
 [ext_resource type="Script" uid="uid://cldbhk80vvyf3" path="res://player.gd" id="2_0xm2m"]
+[ext_resource type="Shader" uid="uid://ni43wjdgfrua" path="res://mirror_world.gdshader" id="3_h2yge"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ig7tw"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -16,28 +18,64 @@ sky = SubResource("Sky_0xm2m")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xm2m"]
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_1bvp3"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lquwl"]
 
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_ig7tw"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1bvp3"]
+render_priority = 0
+shader = ExtResource("3_h2yge")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lquwl"]
+size = Vector2(200, 50)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1bvp3"]
+sky_top_color = Color(0, 0.05490196, 0.5372549, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_lquwl"]
+sky_material = SubResource("ProceduralSkyMaterial_1bvp3")
+
+[sub_resource type="Environment" id="Environment_7mycd"]
+background_mode = 2
+sky = SubResource("Sky_lquwl")
+tonemap_mode = 2
+glow_enabled = true
+
 [node name="Node3D" type="Node3D" unique_id=1526244692]
+script = ExtResource("1_lquwl")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1684818334]
 environment = SubResource("Environment_h2yge")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=338103326]
+[node name="DaytimeDirectionalLight" type="DirectionalLight3D" parent="." unique_id=338103326]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+layers = 4
+shadow_enabled = true
+
+[node name="NighttimeDirectionalLight" type="DirectionalLight3D" parent="." unique_id=2059283540]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+layers = 8
+light_color = Color(7.70092e-07, 0.5915584, 0.7427997, 1)
+light_energy = 0.5
 shadow_enabled = true
 
 [node name="Shadowbound_assets" parent="." unique_id=1379760383 instance=ExtResource("1_ig7tw")]
+
+[node name="mirror" parent="Shadowbound_assets" index="7" unique_id=2082880816]
+visible = false
+surface_material_override/0 = SubResource("StandardMaterial3D_0xm2m")
 
 [node name="statue_boolean_holecutter" parent="Shadowbound_assets" index="9" unique_id=774960347]
 visible = false
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=2019006762]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2014594, -28.991472)
+transform = Transform3D(-0.94899714, 0, -0.31528464, 0, 1, 0, 0.31528464, 0, -0.94899714, 0, 1.2014594, -28.991472)
 script = ExtResource("2_0xm2m")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1156228777]
@@ -51,6 +89,27 @@ transform = Transform3D(1, 0, 0, 0, 0.90630776, 0.42261827, 0, -0.42261827, 0.90
 shape = SubResource("SeparationRayShape3D_ig7tw")
 spring_length = 4.0
 
-[node name="Camera3D" type="Camera3D" parent="Player/SpringArm3D" unique_id=2116706578]
+[node name="RemoteTransform3D" type="RemoteTransform3D" parent="Player/SpringArm3D" unique_id=2111885885]
+remote_path = NodePath("../../../MirrorWorldViewport/Camera3D")
+
+[node name="Camera3D" type="Camera3D" parent="Player/SpringArm3D/RemoteTransform3D" unique_id=2116706578]
+transform = Transform3D(1.0000001, -1.4901161e-08, 2.9802322e-08, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
+cull_mask = 1048567
+
+[node name="Mirror" type="MeshInstance3D" parent="." unique_id=1383769869]
+transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0, 25, 0)
+layers = 2
+material_override = SubResource("ShaderMaterial_1bvp3")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_lquwl")
+
+[node name="MirrorWorldViewport" type="SubViewport" parent="." unique_id=867820804]
+size = Vector2i(2048, 512)
+
+[node name="Camera3D" type="Camera3D" parent="MirrorWorldViewport" unique_id=280807790]
+transform = Transform3D(-0.94899714, 0.13324505, -0.2857449, 0, 0.90630776, 0.42261827, 0.31528464, 0.40106353, -0.86008346, 0, 1.2014594, -28.991472)
+cull_mask = 1048569
+environment = SubResource("Environment_7mycd")
+current = true
 
 [editable path="Shadowbound_assets"]
