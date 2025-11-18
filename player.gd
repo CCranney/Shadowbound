@@ -43,7 +43,7 @@ func _physics_process(delta: float) -> void:
 		var space_state = get_world_3d().direct_space_state
 
 		var query := PhysicsRayQueryParameters3D.new()
-		query.from = global_position
+		query.from = global_position - Vector3(0,0.5,0)
 		query.to = global_position + direction * 1.0
 		query.exclude = [self.get_rid()]
 		query.collision_mask = collision_mask
