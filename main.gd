@@ -24,15 +24,9 @@ func _ready():
 	var all_nodes = _get_all_children(self)
 	
 	for node in all_nodes:
-		if node.is_in_group("immovable_object"):
-			var mirrored_node = node.duplicate()
-			var t : Transform3D = node.global_transform
-			t.origin.z = -t.origin.z
-			t.basis = t.basis.scaled(Vector3(1, 1, -1))
-			mirrored_node.global_transform = t
+		if node.is_in_group("mirrorable_object"):
+			var mirrored_node := ImmovableMirrorCounterpart.new(node)
 			add_child(mirrored_node)
-			
-
 	
 func _process(_delta):
 	if main_camera.global_position.z <= 0:

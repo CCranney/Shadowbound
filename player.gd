@@ -39,14 +39,13 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
-	# Push rigidbodies using a short raycast (Godot 4 correct API)
 	if direction != Vector3.ZERO:
 		var space_state = get_world_3d().direct_space_state
 
 		var query := PhysicsRayQueryParameters3D.new()
 		query.from = global_position
 		query.to = global_position + direction * 1.0
-		query.exclude = [self]       # don't hit the player
+		query.exclude = [self.get_rid()]
 		query.collision_mask = collision_mask
 
 		var result = space_state.intersect_ray(query)

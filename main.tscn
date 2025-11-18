@@ -514,7 +514,7 @@ transform = Transform3D(-0.50546163, 0, 0.86284906, 0, 1, 0, -0.86284906, 0, -0.
 
 [node name="WorldBoundaries" type="Node3D" parent="." unique_id=1023914353]
 
-[node name="Edge" type="StaticBody3D" parent="WorldBoundaries" unique_id=1715733291 groups=["immovable_object"]]
+[node name="Edge" type="StaticBody3D" parent="WorldBoundaries" unique_id=1715733291 groups=["mirrorable_object"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.381905, 4.0903015, -5.823634)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=244647730]
@@ -723,7 +723,7 @@ shape = SubResource("BoxShape3D_272bh")
 
 [node name="Obstacles" type="Node3D" parent="." unique_id=1764158771]
 
-[node name="Boulder" parent="Obstacles" unique_id=1458177157 groups=["movable_object"] instance=ExtResource("8_5vw27")]
+[node name="Boulder" parent="Obstacles" unique_id=1458177157 instance=ExtResource("8_5vw27")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.650436, 1.4125526, -51.484722)
 
 [editable path="Shadowbound_assets"]

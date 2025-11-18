@@ -11,7 +11,7 @@ material = SubResource("StandardMaterial3D_ysltr")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_4laoo"]
 
-[node name="Boulder" type="RigidBody3D" unique_id=932097875]
+[node name="Boulder" type="RigidBody3D" unique_id=932097875 groups=["mirrorable_object"]]
 mass = 0.25
 physics_material_override = SubResource("PhysicsMaterial_ysltr")
 

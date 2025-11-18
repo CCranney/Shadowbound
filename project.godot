@@ -17,8 +17,7 @@ config/icon="res://icon.svg"
 
 [global_group]
 
-immovable_object=""
-movable_object=""
+mirrorable_object=""
 
 [input]
 
