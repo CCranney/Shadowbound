@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://jyls84pp8xcd"]
+[gd_scene load_steps=16 format=3 uid="uid://jyls84pp8xcd"]
 
 [ext_resource type="PackedScene" uid="uid://bpsrjjj60rfai" path="res://assets/Shadowbound_assets.blend" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://b1ip3x0xeaqrb" path="res://main.gd" id="1_lquwl"]
@@ -30,6 +30,12 @@ background_mode = 2
 sky = SubResource("Sky_lquwl")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_272bh"]
+size = Vector3(1, 10, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5vw27"]
+size = Vector3(1, 3, 70)
 
 [node name="Node3D" type="Node3D" unique_id=1526244692]
 script = ExtResource("1_lquwl")
@@ -501,6 +507,215 @@ transform = Transform3D(-0.7811937, 0, 0.62428874, 0, 1, 0, -0.62428874, 0, -0.7
 
 [node name="AppleTree2" parent="AppleTrees" unique_id=636798921 instance=ExtResource("7_272bh")]
 transform = Transform3D(-0.50546163, 0, 0.86284906, 0, 1, 0, -0.86284906, 0, -0.50546163, 45.158703, 0, -153.64891)
+
+[node name="WorldBoundaries" type="Node3D" parent="." unique_id=1023914353]
+
+[node name="Edge" type="StaticBody3D" parent="WorldBoundaries" unique_id=1715733291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.381905, 4.0903015, -5.823634)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=244647730]
+transform = Transform3D(0.9305582, 0, -0.36614394, 0, 1, 0, 0.36614394, 0, 0.9305582, -0.044013977, 0.86312413, 0.70690393)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1959533583]
+transform = Transform3D(0.61002076, 0, -0.7923856, 0, 1, 0, 0.7923856, 0, 0.61002076, 6.061371, 0.86312413, -7.08375)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1434642930]
+transform = Transform3D(0.9982751, 0, -0.05871407, 0, 1, 0, 0.05871407, 0, 0.9982751, 10.249756, 0.86312413, -14.780824)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1333149509]
+transform = Transform3D(0.97474587, 0, 0.22331819, 0, 1, 0, -0.22331819, 0, 0.97474587, 8.704277, 0.86312413, -24.391106)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1964420437]
+transform = Transform3D(0.7326738, 0, 0.6805804, 0, 1, 0, -0.6805804, 0, 0.7326738, 4.3682632, 0.8631251, -32.98405)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=312700045]
+transform = Transform3D(0.7326738, 0, 0.6805804, 0, 1, 0, -0.6805804, 0, 0.7326738, -2.3769684, 0.8631251, -40.24984)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1880772202]
+transform = Transform3D(0.9436279, 0, -0.33100873, 0, 1, 0, 0.33100873, 0, 0.9436279, -4.4025116, 0.86312413, -48.7359)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=778553196]
+transform = Transform3D(0.97115105, 0, -0.23846588, 0, 1, 0, 0.23846588, 0, 0.97115105, -1.6716232, 0.86312413, -58.183475)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=974112242]
+transform = Transform3D(0.97115105, 0, -0.23846588, 0, 1, 0, 0.23846588, 0, 0.97115105, 0.68564606, 0.8631251, -67.77332)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1789943541]
+transform = Transform3D(0.97115105, 0, -0.23846588, 0, 1, 0, 0.23846588, 0, 0.97115105, 2.7168198, 0.8631251, -77.57914)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=654524099]
+transform = Transform3D(0.9797539, 0, -0.20020612, 0, 1, 0, 0.20020612, 0, 0.9797539, 4.771454, 0.8631251, -87.34347)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1556720028]
+transform = Transform3D(0.9990059, 0, -0.044578567, 0, 1, 0, 0.044578567, 0, 0.9990059, 6.010124, 0.8631251, -97.19232)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=196209337]
+transform = Transform3D(0.9950521, 0, 0.0993543, 0, 1, 0, -0.0993543, 0, 0.9950521, 5.82473, 0.86312413, -107.03059)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=767374984]
+transform = Transform3D(0.9770158, 0, 0.21316662, 0, 1, 0, -0.21316662, 0, 0.9770158, 4.3512573, 0.8631251, -116.84761)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1849243545]
+transform = Transform3D(0.9314946, 0, 0.3637551, 0, 1, 0, -0.3637551, 0, 0.9314946, 1.4756622, 0.8631251, -126.175606)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1050196500]
+transform = Transform3D(0.95924, 0, 0.28259242, 0, 1, 0, -0.28259242, 0, 0.95924, -1.8704453, 0.86312604, -135.36342)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=490081009]
+transform = Transform3D(0.9737341, 0, 0.22768794, 0, 1, 0, -0.22768794, 0, 0.9737341, -4.4124985, 0.86312604, -144.61696)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=172530847]
+transform = Transform3D(0.96830034, 0, 0.24978837, 0, 1, 0, -0.24978837, 0, 0.96830034, -6.8934402, 0.86312604, -154.20824)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=947565069]
+transform = Transform3D(0.9654544, 0, 0.26057172, 0, 1, 0, -0.26057172, 0, 0.9654544, -9.326569, 0.86312604, -163.41641)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D20" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1598827948]
+transform = Transform3D(0.30572832, 0, -0.9521188, 0, 1, 0, 0.9521188, 0, 0.30572832, -5.329529, 0.86312604, -167.79196)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=381564439]
+transform = Transform3D(0.4125319, 0, -0.91094315, 0, 1, 0, 0.91094315, 0, 0.4125319, 3.6388245, 0.86312604, -171.29462)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1926923363]
+transform = Transform3D(0.1602427, 0, -0.9870776, 0, 1, 0, 0.9870776, 0, 0.1602427, 13.248497, 0.86312604, -174.04836)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1292166685]
+transform = Transform3D(0.0247809, 0, -0.99969286, 0, 1, 0, 0.99969286, 0, 0.0247809, 22.873089, 0.86312604, -174.97247)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1885339584]
+transform = Transform3D(0.0247809, 0, -0.99969286, 0, 1, 0, 0.99969286, 0, 0.0247809, 32.600132, 0.86312604, -175.10947)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=51286395]
+transform = Transform3D(0.32001758, 0, -0.9474116, 0, 1, 0, 0.9474116, 0, 0.32001758, 42.104538, 0.86312604, -176.7998)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1777395319]
+transform = Transform3D(0.50961196, 0, -0.8604044, 0, 1, 0, 0.8604044, 0, 0.50961196, 50.901318, 0.86312604, -180.90962)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1939289623]
+transform = Transform3D(0.7637396, 0, -0.64552456, 0, 1, 0, 0.64552456, 0, 0.7637396, 57.96595, 0.863127, -186.97462)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D28" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=2036462812]
+transform = Transform3D(-0.99711806, 0, -0.07586619, 0, 1, 0, 0.07586619, 0, -0.99711806, 128.20204, 0.8631308, -184.47493)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1751614443]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 92.6687, 0.8631289, -189.5355)
+shape = SubResource("BoxShape3D_5vw27")
+
+[node name="CollisionShape3D30" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=898925023]
+transform = Transform3D(-0.9986377, 0, 0.05217921, 0, 1, 0, -0.05217921, 0, -0.9986377, 128.40938, 0.82987905, -174.71535)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D31" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1776099362]
+transform = Transform3D(-0.9999597, 0, -0.008970749, 0, 1, 0, 0.008970749, 0, -0.9999597, 128.40938, 0.82987905, -164.89125)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D32" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1690759663]
+transform = Transform3D(-0.9651079, 0, -0.2618522, 0, 1, 0, 0.2618522, 0, -0.9651079, 129.92456, 0.82987905, -155.34662)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D33" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1339580363]
+transform = Transform3D(-0.9497537, 0, -0.31299794, 0, 1, 0, 0.31299794, 0, -0.9497537, 132.71318, 0.82987905, -146.22166)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D34" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1435273176]
+transform = Transform3D(-0.9497537, 0, -0.31299794, 0, 1, 0, 0.31299794, 0, -0.9497537, 135.75868, 0.82987905, -136.85449)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D35" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=708506331]
+transform = Transform3D(-0.9497537, 0, -0.31299794, 0, 1, 0, 0.31299794, 0, -0.9497537, 138.91309, 0.82987905, -127.927376)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D36" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=620097458]
+transform = Transform3D(-0.82189554, 0, -0.569638, 0, 1, 0, 0.569638, 0, -0.82189554, 143.20984, 0.82987905, -119.44957)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D37" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1395540482]
+transform = Transform3D(-0.85463107, 0, -0.51923555, 0, 1, 0, 0.51923555, 0, -0.85463107, 148.48703, 0.82987905, -111.015205)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D38" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1242573088]
+transform = Transform3D(-0.697978, 0, -0.71611905, 0, 1, 0, 0.71611905, 0, -0.697978, 154.49963, 0.82987905, -103.507744)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D39" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1382029353]
+transform = Transform3D(-0.6241933, 0, -0.7812698, 0, 1, 0, 0.7812698, 0, -0.6241933, 161.81427, 0.82987905, -97.1427)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D40" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1922987013]
+transform = Transform3D(-0.50066495, 0, -0.865641, 0, 1, 0, 0.865641, 0, -0.50066495, 169.62854, 0.82988095, -91.7616)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D41" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1084799930]
+transform = Transform3D(-0.9280767, 0, 0.37238854, 0, 1, 0, -0.37238854, 0, -0.9280767, 171.09052, 0.82988095, -85.396904)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D42" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1527078507]
+transform = Transform3D(-0.96713006, 0, 0.25428128, 0, 1, 0, -0.25428128, 0, -0.96713006, 168.00568, 0.8298805, -76.3399)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D43" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=2031591164]
+transform = Transform3D(-0.9976291, 0, 0.06881634, 0, 1, 0, -0.06881634, 0, -0.9976291, 166.0036, 0.8298805, -66.698044)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D44" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1771584725]
+transform = Transform3D(-0.9976291, 0, 0.06881634, 0, 1, 0, -0.06881634, 0, -0.9976291, 165.18678, 0.8298805, -57.202625)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D45" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1249476286]
+transform = Transform3D(-0.9949368, 0, -0.10050051, 0, 1, 0, 0.10050051, 0, -0.9949368, 165.59152, 0.8298805, -47.64078)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D46" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=734782848]
+transform = Transform3D(-0.96677417, 0, -0.2556312, 0, 1, 0, 0.2556312, 0, -0.96677417, 166.94092, 0.8298805, -38.11915)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D47" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1294287730]
+transform = Transform3D(-0.96677417, 0, -0.2556312, 0, 1, 0, 0.2556312, 0, -0.96677417, 169.41922, 0.8298805, -28.340744)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D48" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1808214064]
+transform = Transform3D(-0.9196365, 0, -0.3927704, 0, 1, 0, 0.3927704, 0, -0.9196365, 172.34235, 0.8298814, -18.820652)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D49" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1160880806]
+transform = Transform3D(-0.95010823, 0, -0.3119203, 0, 1, 0, 0.3119203, 0, -0.95010823, 175.28885, 0.8298814, -9.477247)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D50" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1041026561]
+transform = Transform3D(-0.9194377, 0, -0.39323595, 0, 1, 0, 0.39323595, 0, -0.9194377, 178.50555, 0.8298814, -0.267375)
+shape = SubResource("BoxShape3D_272bh")
+
+[node name="CollisionShape3D51" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=273233771]
+transform = Transform3D(-0.8330178, 0, -0.5532461, 0, 1, 0, 0.5532461, 0, -0.8330178, 181.28723, 0.8298814, 5.362089)
+shape = SubResource("BoxShape3D_272bh")
 
 [editable path="Shadowbound_assets"]
 [editable path="Player"]
