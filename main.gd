@@ -15,11 +15,24 @@ var sun_directional_light_mask_bit = 3
 var moon_directional_light_mask_bit = 4
 
 
-func _ready():
+func _ready():	
 	current_environment.environment = day_environment
 	mirror_world_viewport.size = get_viewport().size
 	mat = mirror_mesh.get_active_material(0) as ShaderMaterial
 	mat.set_shader_parameter("mirror_world_camera_texture", mirror_world_viewport.get_texture())
+	
+	var all_nodes = _get_all_children(self)
+	
+	for node in all_nodes:
+		if node.is_in_group("immovable_object"):
+			var mirrored_node = node.duplicate()
+			var t : Transform3D = node.global_transform
+			t.origin.z = -t.origin.z
+			t.basis = t.basis.scaled(Vector3(1, 1, -1))
+			mirrored_node.global_transform = t
+			add_child(mirrored_node)
+			
+
 	
 func _process(_delta):
 	if main_camera.global_position.z <= 0:
@@ -44,3 +57,11 @@ func _process(_delta):
 		mirror_camera.environment = day_environment
 		mirror_camera.set_cull_mask_value(sun_directional_light_mask_bit, true) 
 		mirror_camera.set_cull_mask_value(moon_directional_light_mask_bit, false) 
+
+func _get_all_children(node) -> Array:
+	var nodes : Array = []
+	for N in node.get_children():
+		nodes.append(N)
+		if N.get_child_count() > 0:
+			nodes.append_array(_get_all_children(N))
+	return nodes

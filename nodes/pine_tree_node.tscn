@@ -5,7 +5,7 @@
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ryxpr"]
 radius = 1.1
 
-[node name="PineTree" type="StaticBody3D" unique_id=250622884]
+[node name="PineTree" type="StaticBody3D" unique_id=250622884 groups=["immovable_object"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1577676213]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 3.0446067, 0)
