@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://jyls84pp8xcd"]
+[gd_scene load_steps=18 format=3 uid="uid://jyls84pp8xcd"]
 
 [ext_resource type="PackedScene" uid="uid://bpsrjjj60rfai" path="res://assets/Shadowbound_assets.blend" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://b1ip3x0xeaqrb" path="res://main.gd" id="1_lquwl"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://brea36gyxapgl" path="res://nodes/pine_tree_node.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://c04ttjb25p2i6" path="res://assets/GenericTree.blend" id="6_7mycd"]
 [ext_resource type="PackedScene" uid="uid://pxvcs26gwr4q" path="res://nodes/apple_tree_node.tscn" id="7_272bh"]
+[ext_resource type="PackedScene" uid="uid://dvu3clkho12px" path="res://nodes/boulder.tscn" id="8_5vw27"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xm2m"]
 
@@ -719,6 +720,11 @@ shape = SubResource("BoxShape3D_272bh")
 [node name="CollisionShape3D51" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=273233771]
 transform = Transform3D(-0.8330178, 0, -0.5532461, 0, 1, 0, 0.5532461, 0, -0.8330178, 181.28723, 0.8298814, 5.362089)
 shape = SubResource("BoxShape3D_272bh")
+
+[node name="Obstacles" type="Node3D" parent="." unique_id=1764158771]
+
+[node name="Boulder" parent="Obstacles" unique_id=1458177157 groups=["movable_object"] instance=ExtResource("8_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.650436, 1.4125526, -51.484722)
 
 [editable path="Shadowbound_assets"]
 [editable path="Player"]
