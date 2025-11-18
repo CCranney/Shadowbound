@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://pxvcs26gwr4q"]
+
+[ext_resource type="PackedScene" uid="uid://bmym8ayu12lb4" path="res://assets/AppleTree.blend" id="1_0fpmq"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0fpmq"]
+radius = 1.5
+
+[node name="AppleTree" type="StaticBody3D" unique_id=1225790030]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1740963775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.167038, 0)
+shape = SubResource("CylinderShape3D_0fpmq")
+
+[node name="AppleTreeMesh" parent="." unique_id=359632094 instance=ExtResource("1_0fpmq")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
