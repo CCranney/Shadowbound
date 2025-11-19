@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cstg4rttt83mf"]
+[gd_scene load_steps=10 format=4 uid="uid://cstg4rttt83mf"]
 
 [ext_resource type="Script" uid="uid://cldbhk80vvyf3" path="res://player.gd" id="1_u63mc"]
 
@@ -10,6 +10,44 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_u63mc"]
 size = Vector3(0.25, 0.25, 0.25)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oe8r1"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5et5j"]
+_surfaces = [{
+"aabb": AABB(-0.54182506, -1.4779615, -0.54188687, 1.0836501, 2.955923, 1.0836501),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAAAEAAEAAwABAAQAAAACAAUAAwAFAAIAAAAFAAQAAwAEAAUA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("L4AAANN/AAAAAPd/7X8AAP9//n///wAAz3///zOAAAD/f/5/AAAAAP///n//fwAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_u63mc"]
+resource_name = "Diamond_Cube_001"
+_surfaces = [{
+"aabb": AABB(-0.54182506, -1.4779615, -0.54188687, 1.0836501, 2.955923, 1.0836501),
+"attribute_data": PackedByteArray("8j/yX/8f8l/yP/8/DID//wyADOD/nwzg8j8MYPI//3//Hwxg/5+c3wyA8d8MgKm/DUDyX2JA1D9VYPJfKqBjIAyAVUAMgA0gDUAMYFVgDGBiQCqAKqCcnwyA8p8MgKl/"),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgACQAKAAsADAANAA4ADwAQABEAEgATABQAFQAWABcA"),
+"material": SubResource("StandardMaterial3D_oe8r1"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("L4AAANN/l7oAAPd/7X+Xuv9//n///5e6/3/+f///m7oAAPd/7X+bus9///8zgJu6L4AAANN/++T/f/5/AAD75AAA93/tf/vkz3///zOA6uQAAPd/7X/q5P9//n8AAOrkL4AAANN/nrr/f/5///+euv///n//f566z3///zOA0cH///5//3/Rwf9//n///9HBL4AAANN//eT///5//3/95P9//n8AAP3kz3///zOAY/T/f/5/AABj9P///n//f2P0Uln6mlJZ+ppSWfqa9+Rj2ffkY9n35GPZ/z+prP8/qaz/P6msHdMiwB3TIsAd0yLA+RqkJvkapCb5GqQmfCpREHwqURB8KlEQryz1P68s9T+vLPU/YC4cNWAuHDVgLhw1")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_5et5j")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bms3g"]
+albedo_color = Color(0.3529412, 1, 1, 1)
+emission_enabled = true
+emission = Color(5.7756904e-07, 0.7649926, 0.81166863, 1)
+emission_energy_multiplier = 5.0
 
 [node name="Player" type="CharacterBody3D" unique_id=1608778751]
 transform = Transform3D(-0.94899714, 0, -0.31528464, 0, 1, 0, 0.31528464, 0, -0.94899714, 0, 0, 0)
@@ -33,10 +71,20 @@ remote_path = NodePath("../../../MirrorWorldViewport/Camera3D")
 transform = Transform3D(1.0000001, -1.4901161e-08, 2.9802322e-08, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 cull_mask = 1048567
 
-[node name="Basket" type="MeshInstance3D" parent="." unique_id=1294418295]
+[node name="BasketMesh" type="MeshInstance3D" parent="." unique_id=1294418295]
 transform = Transform3D(1.0000011, 0, 2.9802322e-08, 0, 1.0000002, 0, 0, 0, 1.000001, 0.3657905, 0.20535728, -1.589634)
 mesh = SubResource("BoxMesh_u63mc")
 
 [node name="HorizontalPivot" type="Node3D" parent="." unique_id=1418860843]
 
 [node name="VerticalPivot" type="Node3D" parent="HorizontalPivot" unique_id=1406272575]
+
+[node name="DiamondMesh" type="MeshInstance3D" parent="." unique_id=88025743]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.5130805, 0, -1.5443567)
+mesh = SubResource("ArrayMesh_u63mc")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_bms3g")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="DiamondMesh" unique_id=2079733702]
+light_color = Color(0, 1, 1, 1)
+light_energy = 5.0

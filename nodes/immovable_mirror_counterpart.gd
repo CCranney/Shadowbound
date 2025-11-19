@@ -7,7 +7,7 @@ func _init(original: Node3D):
 	original_node = original
 	global_transform = original_node.global_transform
 	for child in original_node.get_children():
-		var duplicate_child = child.duplicate()
+		var duplicate_child = child.duplicate(DuplicateFlags.DUPLICATE_GROUPS)
 		add_child(duplicate_child)
 	global_transform = find_mirror_transform(original_node)
 	

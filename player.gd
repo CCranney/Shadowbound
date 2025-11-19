@@ -6,7 +6,8 @@ const SPEED = 50.0
 @onready var spring_arm : SpringArm3D = $SpringArm3D
 @onready var horizontal_pivot : Node3D = $HorizontalPivot
 @onready var vertical_pivot : Node3D = $HorizontalPivot/VerticalPivot
-@onready var basket : MeshInstance3D = $Basket
+@onready var basket_mesh : MeshInstance3D = $BasketMesh
+@onready var diamond_mesh : MeshInstance3D = $DiamondMesh
 
 @export var mouse_sensitivity := 0.00075
 @export var vertical_min_boundary: float = -60
@@ -22,13 +23,19 @@ var player_holding_status = PlayerHolding.NOTHING:
 	set(new_value):
 		player_holding_status = new_value
 		if new_value == PlayerHolding.BASKET:
-			basket.visible = true
+			basket_mesh.visible = true
+			diamond_mesh.visible = false
+		elif new_value == PlayerHolding.DIAMOND:
+			basket_mesh.visible = false
+			diamond_mesh.visible = true
 		else:
-			basket.visible = false
+			basket_mesh.visible = false
+			diamond_mesh.visible = false
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	basket.visible = false
+	basket_mesh.visible = false
+	diamond_mesh.visible = false
 
 func _physics_process(delta: float) -> void:
 	frame_camera_rotation()
