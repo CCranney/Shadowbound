@@ -1690,6 +1690,7 @@ transform = Transform3D(0.69807327, 0, 0.051900327, 0, 0.6999999, 0, -0.05190032
 
 [node name="AppleTree" parent="AppleTrees" unique_id=1225790030 instance=ExtResource("7_272bh")]
 transform = Transform3D(-0.7811937, 0, 0.62428874, 0, 1, 0, -0.62428874, 0, -0.7811937, 83.22549, 0, -86.441345)
+is_basket_present = true
 
 [node name="AppleTree2" parent="AppleTrees" unique_id=636798921 instance=ExtResource("7_272bh")]
 transform = Transform3D(-0.50546163, 0, 0.86284906, 0, 1, 0, -0.86284906, 0, -0.50546163, 45.158703, 0, -153.64891)

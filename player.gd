@@ -7,15 +7,30 @@ const JUMP_VELOCITY = 4.5
 @onready var spring_arm : SpringArm3D = $SpringArm3D
 @onready var horizontal_pivot : Node3D = $HorizontalPivot
 @onready var vertical_pivot : Node3D = $HorizontalPivot/VerticalPivot
+@onready var basket : MeshInstance3D = $Basket
 
 @export var mouse_sensitivity := 0.00075
 @export var vertical_min_boundary: float = -60
 @export var vertical_max_boundary: float = 10
 
 var _looking_direction := Vector2.ZERO
+enum PlayerHolding {
+	NOTHING,
+	BASKET,
+	DIAMOND,
+}
+var player_holding_status = PlayerHolding.NOTHING:
+	set(new_value):
+		player_holding_status = new_value
+		if new_value == PlayerHolding.BASKET:
+			basket.visible = true
+		else:
+			basket.visible = false
+
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	basket.visible = false
 
 func _physics_process(delta: float) -> void:
 	frame_camera_rotation()

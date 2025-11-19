@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cstg4rttt83mf"]
+[gd_scene load_steps=6 format=3 uid="uid://cstg4rttt83mf"]
 
 [ext_resource type="Script" uid="uid://cldbhk80vvyf3" path="res://player.gd" id="1_u63mc"]
 
@@ -7,6 +7,9 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lquwl"]
 
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_ig7tw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_u63mc"]
+size = Vector3(0.25, 0.25, 0.25)
 
 [node name="Player" type="CharacterBody3D" unique_id=1608778751]
 transform = Transform3D(-0.94899714, 0, -0.31528464, 0, 1, 0, 0.31528464, 0, -0.94899714, 0, 0, 0)
@@ -29,6 +32,10 @@ remote_path = NodePath("../../../MirrorWorldViewport/Camera3D")
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D/RemoteTransform3D" unique_id=166699866]
 transform = Transform3D(1.0000001, -1.4901161e-08, 2.9802322e-08, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 cull_mask = 1048567
+
+[node name="Basket" type="MeshInstance3D" parent="." unique_id=1294418295]
+transform = Transform3D(1.0000011, 0, 2.9802322e-08, 0, 1.0000002, 0, 0, 0, 1.000001, 0.3657905, 0.20535728, -1.589634)
+mesh = SubResource("BoxMesh_u63mc")
 
 [node name="HorizontalPivot" type="Node3D" parent="." unique_id=1418860843]
 
