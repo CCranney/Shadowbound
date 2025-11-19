@@ -1,0 +1,176 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjme8rpjdtxs5"]
+
+[ext_resource type="Script" uid="uid://bxqxxyiwq6pni" path="res://nodes/user_interface.gd" id="1_tpf8c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kurd5"]
+font_size = 64
+outline_size = 12
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tpf8c"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_arvly"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_wlri3"]
+font_size = 48
+
+[node name="UserInterface" type="Control" unique_id=1166253200]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_tpf8c")
+
+[node name="IntroText" type="Control" parent="." unique_id=139486713]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="IntroText" unique_id=1810629914]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 24.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="IntroText/MarginContainer" unique_id=1910795867]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="IntroText/MarginContainer/VBoxContainer" unique_id=1500171462]
+layout_mode = 2
+text = "Shadowbound"
+label_settings = SubResource("LabelSettings_kurd5")
+horizontal_alignment = 1
+
+[node name="IntroText" type="Label" parent="IntroText/MarginContainer/VBoxContainer" unique_id=696421599]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_vertical = 3
+text = "The battle between good and evil has reached a tipping point. Lead by the the mighty champion of light, good seemed about to prevail. But alas! The denizens of the shadow realm have stolen the power source for our hero to summon their own dark champion. Can you steal it back before our hero crumbles to dust?"
+label_settings = SubResource("LabelSettings_tpf8c")
+autowrap_mode = 2
+
+[node name="Instructions" type="Label" parent="IntroText/MarginContainer/VBoxContainer" unique_id=746411346]
+layout_mode = 2
+text = "Hit escape (\"esc\") to quit
+WASD to move
+move mouse to change angles"
+label_settings = SubResource("LabelSettings_arvly")
+
+[node name="ContinueButton" type="Button" parent="IntroText/MarginContainer/VBoxContainer" unique_id=527067560]
+layout_mode = 2
+text = "Continue"
+
+[node name="MainMenu" type="Control" parent="." unique_id=2117077554]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MainMenu" unique_id=51725764]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu/MarginContainer" unique_id=562193815]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainMenu/MarginContainer/VBoxContainer" unique_id=871554118]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="MainMenu/MarginContainer/VBoxContainer/HBoxContainer" unique_id=574645474]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="InfiniteButton" type="Button" parent="MainMenu/MarginContainer/VBoxContainer/HBoxContainer" unique_id=126628701]
+layout_mode = 2
+text = "Sandbox
+(infinite time)"
+
+[node name="EasyButton" type="Button" parent="MainMenu/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1610490050]
+layout_mode = 2
+text = "Easy Mode
+(5 minutes)"
+
+[node name="MediumButton" type="Button" parent="MainMenu/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1065180961]
+layout_mode = 2
+text = "Medium Mode
+(3 minutes)"
+
+[node name="HardButton" type="Button" parent="MainMenu/MarginContainer/VBoxContainer/HBoxContainer" unique_id=916287294]
+layout_mode = 2
+text = "Hard Mode
+(1 minute)"
+
+[node name="Control2" type="Control" parent="MainMenu/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1002658852]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TimerInfo" type="Control" parent="." unique_id=260079524]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TimerInfo" unique_id=1994003994]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TimerInfo/MarginContainer" unique_id=1189432529]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Control" type="Control" parent="TimerInfo/MarginContainer/VBoxContainer" unique_id=1950049489]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="TimerLabel" type="Label" parent="TimerInfo/MarginContainer/VBoxContainer" unique_id=1704124261]
+unique_name_in_owner = true
+layout_mode = 2
+text = "<filler>"
+label_settings = SubResource("LabelSettings_wlri3")
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="." unique_id=1362130825]
+one_shot = true
+
+[connection signal="pressed" from="IntroText/MarginContainer/VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer/InfiniteButton" to="." method="_on_infinite_button_pressed"]
+[connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer/EasyButton" to="." method="_on_easy_button_pressed"]
+[connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer/MediumButton" to="." method="_on_medium_button_pressed"]
+[connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer/HardButton" to="." method="_on_hard_button_pressed"]

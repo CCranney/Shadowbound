@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 
-const SPEED = 50.0
+const SPEED = 20.0
 
 @onready var spring_arm : SpringArm3D = $SpringArm3D
 @onready var horizontal_pivot : Node3D = $HorizontalPivot
@@ -33,7 +33,6 @@ var player_holding_status = PlayerHolding.NOTHING:
 			diamond_mesh.visible = false
 
 func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	basket_mesh.visible = false
 	diamond_mesh.visible = false
 
@@ -80,8 +79,6 @@ func frame_camera_rotation() -> void:
 	_looking_direction = Vector2.ZERO
 	
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("ui_cancel"):
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
 			_looking_direction += -event.relative * mouse_sensitivity

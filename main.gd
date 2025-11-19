@@ -63,3 +63,8 @@ func _get_all_children(node) -> Array:
 			nodes.append_array(_get_all_children(N))
 	return nodes
 	
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().quit()
+
+	
