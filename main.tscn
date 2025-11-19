@@ -25,7 +25,7 @@ render_priority = 0
 shader = ExtResource("3_h2yge")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_lquwl"]
-size = Vector2(200, 50)
+size = Vector2(275, 50)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1bvp3"]
 sky_top_color = Color(0, 0.05490196, 0.5372549, 1)
@@ -471,12 +471,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.963028, 0, -122.767265)
 [node name="PineTree131" parent="NavigationRegion3D/BarrierTrees" unique_id=99558384 instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.912003, 0, -116.61426)
 
-[node name="Shadowbound_assets" parent="NavigationRegion3D" unique_id=1774518684 instance=ExtResource("1_ig7tw")]
+[node name="Shadowbound_assets" parent="NavigationRegion3D" unique_id=148190237 instance=ExtResource("1_ig7tw")]
 
-[node name="statue_boolean_holecutter" parent="NavigationRegion3D/Shadowbound_assets" index="8" unique_id=1909666184]
+[node name="statue_boolean_holecutter" parent="NavigationRegion3D/Shadowbound_assets" index="7" unique_id=233220652]
 visible = false
 
-[node name="Diamond" parent="NavigationRegion3D/Shadowbound_assets" index="9" unique_id=1746696262]
+[node name="Diamond" parent="NavigationRegion3D/Shadowbound_assets" index="8" unique_id=2141231543]
 visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_efxa6")
 
