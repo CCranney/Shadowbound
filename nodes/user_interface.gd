@@ -20,7 +20,8 @@ func format_time(t: float) -> String:
 	@warning_ignore("integer_division")
 	var minutes = int(t) / 60
 	var seconds = int(t) % 60
-	return "%02d:%02d" % [minutes, seconds]
+	var milliseconds = int((t - int(t))*10)
+	return "%02d:%02d.%01d" % [minutes, seconds, milliseconds]
 
 func _on_continue_button_pressed() -> void:
 	intro_text.visible = false
