@@ -2,7 +2,6 @@ extends CharacterBody3D
 
 
 const SPEED = 50.0
-const JUMP_VELOCITY = 4.5
 
 @onready var spring_arm : SpringArm3D = $SpringArm3D
 @onready var horizontal_pivot : Node3D = $HorizontalPivot
@@ -27,7 +26,6 @@ var player_holding_status = PlayerHolding.NOTHING:
 		else:
 			basket.visible = false
 
-
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	basket.visible = false
@@ -37,10 +35,6 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

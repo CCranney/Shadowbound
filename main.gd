@@ -9,11 +9,11 @@ extends Node3D
 @onready var mirror_camera: Camera3D = $MirrorWorldViewport/Camera3D
 @onready var mirror_plane: MeshInstance3D = $Mirror
 @onready var backup_mirror_plane: MeshInstance3D = $BackupMirrorForHalfwayThrough
+@onready var sheep_target: StaticBody3D = $AppleTrees/TargetAppleTree
 
 var mat : ShaderMaterial
 var sun_directional_light_mask_bit = 3
 var moon_directional_light_mask_bit = 4
-
 
 func _ready():	
 	current_environment.environment = day_environment
@@ -27,6 +27,9 @@ func _ready():
 		if node.is_in_group("mirrorable_object"):
 			var mirrored_node := ImmovableMirrorCounterpart.new(node)
 			add_child(mirrored_node)
+		if node is NavigationAgent3D:
+			node.target_position = sheep_target.global_position
+
 	
 func _process(_delta):
 	if main_camera.global_position.z <= 0:
@@ -59,3 +62,4 @@ func _get_all_children(node) -> Array:
 		if N.get_child_count() > 0:
 			nodes.append_array(_get_all_children(N))
 	return nodes
+	
