@@ -53,6 +53,12 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_som63")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="DiamondMesh" unique_id=1034049597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.68194926)
+light_color = Color(0, 1, 1, 1)
+light_energy = 5.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="DiamondMesh" unique_id=1701996339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.65079606)
 light_color = Color(0, 1, 1, 1)
 light_energy = 5.0
 
