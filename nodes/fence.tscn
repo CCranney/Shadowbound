@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cs6anevl6tbxh"]
+
+[ext_resource type="PackedScene" uid="uid://bay1kmghvr6to" path="res://assets/Fence.blend" id="1_r7sca"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hqxi5"]
+size = Vector3(1, 4.5, 10)
+
+[node name="Fence" type="StaticBody3D" unique_id=1103413444 groups=["mirrorable_object"]]
+
+[node name="FenceMesh" parent="." unique_id=137320142 instance=ExtResource("1_r7sca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2295444, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=849984072]
+shape = SubResource("BoxShape3D_hqxi5")

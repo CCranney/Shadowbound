@@ -1,10 +1,11 @@
-[gd_scene load_steps=21 format=3 uid="uid://jyls84pp8xcd"]
+[gd_scene load_steps=22 format=3 uid="uid://jyls84pp8xcd"]
 
 [ext_resource type="PackedScene" uid="uid://bpsrjjj60rfai" path="res://assets/Shadowbound_assets.blend" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://b1ip3x0xeaqrb" path="res://main.gd" id="1_lquwl"]
 [ext_resource type="PackedScene" uid="uid://cstg4rttt83mf" path="res://nodes/player.tscn" id="3_272bh"]
 [ext_resource type="Shader" uid="uid://ni43wjdgfrua" path="res://mirror_world.gdshader" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://b7hj4n6ikrbgy" path="res://nodes/diamond_insertion.tscn" id="4_4c57u"]
+[ext_resource type="PackedScene" uid="uid://cs6anevl6tbxh" path="res://nodes/fence.tscn" id="5_efxa6"]
 [ext_resource type="PackedScene" uid="uid://cny6qsfcd5sq2" path="res://nodes/sheeple.tscn" id="5_kek77"]
 [ext_resource type="PackedScene" uid="uid://brea36gyxapgl" path="res://nodes/pine_tree_node.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://c04ttjb25p2i6" path="res://assets/GenericTree.blend" id="6_7mycd"]
@@ -461,6 +462,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.335013, 3.2292163, -195.06
 [node name="DarkDiamondInsertion" parent="NavigationRegion3D/Shadowbound_assets" unique_id=747752766 instance=ExtResource("4_4c57u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.335, 3.229, 195.066)
 is_diamond_inserted = true
+
+[node name="BarrierFences" type="Node3D" parent="NavigationRegion3D" unique_id=1286856559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.828117, 0, -109.30382)
+
+[node name="Fence" parent="NavigationRegion3D/BarrierFences" unique_id=1103413444 instance=ExtResource("5_efxa6")]
+transform = Transform3D(0.028340315, 0, 0.9995983, 0, 1, 0, -0.9995983, 0, 0.028340315, -4.430372, 0, 0.38193512)
+
+[node name="Fence2" parent="NavigationRegion3D/BarrierFences" unique_id=1467770745 instance=ExtResource("5_efxa6")]
+transform = Transform3D(0.028340315, 0, 0.9995983, 0, 1, 0, -0.9995983, 0, 0.028340315, 4.8169613, 0, 0.6565857)
 
 [node name="Player" parent="." unique_id=1608778751 instance=ExtResource("3_272bh")]
 transform = Transform3D(0.9605997, 0, 0.2779351, 0, 1, 0, -0.2779351, 0, 0.9605997, 29.207218, 1.2014594, -28.991472)
