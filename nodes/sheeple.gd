@@ -13,3 +13,6 @@ func _physics_process(_delta: float) -> void:
 	var next_position = navigation_agent_3d.get_next_path_position()
 	var direction = global_position.direction_to(next_position)
 	linear_velocity = direction * speed
+	if direction.length() > 0.001:
+		var flat_direction = Vector3(direction.x, 0, direction.z).normalized()
+		look_at(global_position + flat_direction, Vector3.UP)
