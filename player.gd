@@ -8,6 +8,9 @@ const SPEED = 20.0
 @onready var vertical_pivot : Node3D = $HorizontalPivot/VerticalPivot
 @onready var basket_mesh : Node3D = $BasketMesh
 @onready var diamond_mesh : MeshInstance3D = $DiamondMesh
+@onready var person_mesh: Node3D = $PersonMesh
+@export var max_tilt_angle := 40.0
+@export var tilt_speed := 6.0
 
 @export var mouse_sensitivity := 0.00075
 @export var vertical_min_boundary: float = -60
@@ -54,6 +57,8 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	apply_mesh_tilt(direction, delta)
+	
 	if direction != Vector3.ZERO:
 		var space_state = get_world_3d().direct_space_state
 
@@ -69,8 +74,22 @@ func _physics_process(delta: float) -> void:
 			var rb : RigidBody3D = result.collider
 			rb.apply_force(direction * 1.0)
 	
+func apply_mesh_tilt(direction: Vector3, delta: float) -> void:
+	if direction == Vector3.ZERO:
+		var target_rot = Vector3.ZERO
+		person_mesh.rotation.x = lerp_angle(person_mesh.rotation.x, target_rot.x, delta * tilt_speed)
+		person_mesh.rotation.z = lerp_angle(person_mesh.rotation.z, target_rot.z, delta * tilt_speed)
+		return
+
+	var local_dir = global_transform.basis.inverse() * direction
+	var forward_tilt = -deg_to_rad(max_tilt_angle) * local_dir.z
+	var side_tilt = deg_to_rad(max_tilt_angle) * local_dir.x
+
+	person_mesh.rotation.x = lerp_angle(person_mesh.rotation.x, forward_tilt, delta * tilt_speed)
+	person_mesh.rotation.z = lerp_angle(person_mesh.rotation.z, side_tilt, delta * tilt_speed)
+	
 func frame_camera_rotation() -> void:
-	horizontal_pivot.rotate_y(_looking_direction.x)
+	rotate_y(_looking_direction.x)
 	vertical_pivot.rotate_x(_looking_direction.y)
 	
 	vertical_pivot.rotation.x = clampf(vertical_pivot.rotation.x, deg_to_rad(vertical_min_boundary),deg_to_rad(vertical_max_boundary) )
