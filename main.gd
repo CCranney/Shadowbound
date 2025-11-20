@@ -10,6 +10,7 @@ extends Node3D
 @onready var mirror_plane: MeshInstance3D = $Mirror
 @onready var backup_mirror_plane: MeshInstance3D = $BackupMirrorForHalfwayThrough
 @onready var sheep_target: StaticBody3D = $AppleTrees/TargetAppleTree
+@onready var ui: Control = $UserInterface
 
 var mat : ShaderMaterial
 var sun_directional_light_mask_bit = 3
@@ -62,9 +63,6 @@ func _get_all_children(node) -> Array:
 		if N.get_child_count() > 0:
 			nodes.append_array(_get_all_children(N))
 	return nodes
-	
-func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("ui_cancel"):
-		get_tree().quit()
 
-	
+func _on_light_diamond_insertion_objective_fulfilled() -> void:
+	ui.end_game_screen(true)

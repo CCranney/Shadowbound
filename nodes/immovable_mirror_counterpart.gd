@@ -8,6 +8,8 @@ func _init(original: Node3D):
 	global_transform = original_node.global_transform
 	for child in original_node.get_children():
 		var duplicate_child = child.duplicate(DuplicateFlags.DUPLICATE_GROUPS)
+		if duplicate_child.name.contains("asket"):
+			continue
 		add_child(duplicate_child)
 	global_transform = find_mirror_transform(original_node)
 	

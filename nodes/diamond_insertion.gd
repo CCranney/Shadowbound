@@ -1,12 +1,17 @@
 extends Area3D
 
+signal objective_fulfilled
+
 @onready var diamond_mesh: MeshInstance3D = $DiamondMesh
 
+@export var is_final_objective := false
 @export var is_diamond_inserted: bool = false:
 	set(new_value):
 		is_diamond_inserted = new_value
 		if diamond_mesh:
 			diamond_mesh.visible = new_value
+		if is_final_objective and new_value:
+			objective_fulfilled.emit()
 
 func _ready() -> void:
 	diamond_mesh.visible = is_diamond_inserted
