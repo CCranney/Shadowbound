@@ -518,6 +518,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.912003, 0, -116.61426)
 
 [node name="Shadowbound_assets" parent="NavigationRegion3D" instance=ExtResource("1_ig7tw")]
 
+[node name="StaticBody3D" parent="NavigationRegion3D/Shadowbound_assets/floor" index="0"]
+collision_mask = 7
+
 [node name="statue_boolean_holecutter" parent="NavigationRegion3D/Shadowbound_assets" index="7"]
 visible = false
 

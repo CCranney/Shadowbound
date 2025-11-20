@@ -44,25 +44,26 @@ emission_energy_multiplier = 5.0
 height = 6.0
 radius = 1.0
 
-[node name="DiamondInsertion" type="Area3D" unique_id=285348371]
+[node name="DiamondInsertion" type="Area3D"]
+collision_mask = 3
 script = ExtResource("1_gs13n")
 
-[node name="DiamondMesh" type="MeshInstance3D" parent="." unique_id=1294864020]
+[node name="DiamondMesh" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_1jxr0")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_som63")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="DiamondMesh" unique_id=1034049597]
+[node name="OmniLight3D" type="OmniLight3D" parent="DiamondMesh"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.68194926)
 light_color = Color(0, 1, 1, 1)
 light_energy = 5.0
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="DiamondMesh" unique_id=1701996339]
+[node name="OmniLight3D2" type="OmniLight3D" parent="DiamondMesh"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.65079606)
 light_color = Color(0, 1, 1, 1)
 light_energy = 5.0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1739863520]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CylinderShape3D_kek77")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

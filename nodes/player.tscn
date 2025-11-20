@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cldbhk80vvyf3" path="res://player.gd" id="1_u63mc"]
 [ext_resource type="PackedScene" uid="uid://fv4x0fu4jr0u" path="res://assets/AppleBasket.blend" id="2_bms3g"]
-[ext_resource type="PackedScene" uid="uid://bwlbq6155r55o" path="res://assets/Person.blend" id="2_me0cc"]
+[ext_resource type="PackedScene" uid="uid://56nporr4wxju" path="res://assets/DecayingPerson.blend" id="2_me0cc"]
+[ext_resource type="Script" uid="uid://14b1v5lx71vu" path="res://assets/decaying_person.gd" id="3_hqdnm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lquwl"]
 
@@ -40,15 +41,70 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5et5j")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_me0cc"]
-albedo_color = Color(0, 1, 1, 1)
-
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(-0.94899714, 0, -0.31528464, 0, 1, 0, 0.31528464, 0, -0.94899714, 0, 0, 0)
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_u63mc")
 
 [node name="PersonMesh" parent="." instance=ExtResource("2_me0cc")]
-transform = Transform3D(-0.1498996, 0, -0.0054887123, 0, 0.15, 0, 0.0054887123, 0, -0.1498996, 0, 0.4, 0)
+transform = Transform3D(-0.15, 0, 1.3113417e-08, 0, 0.15, 0, -1.3113417e-08, 0, -0.15, 0, 0.4, 0)
+script = ExtResource("3_hqdnm")
+
+[node name="Pelvis-rigid" parent="PersonMesh" index="0"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="RightHand-rigid" parent="PersonMesh" index="1"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="RightFoot-rigid" parent="PersonMesh" index="2"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="LeftFoot-rigid" parent="PersonMesh" index="3"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="LeftHand-rigid" parent="PersonMesh" index="4"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="RightKnee-rigid" parent="PersonMesh" index="5"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="LeftKnee-rigid" parent="PersonMesh" index="6"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="LeftTorso-rigid" parent="PersonMesh" index="7"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="RightTorso-rigid" parent="PersonMesh" index="8"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="LowerHead-rigid" parent="PersonMesh" index="9"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
+
+[node name="UpperHead-rigid" parent="PersonMesh" index="10"]
+collision_layer = 4
+collision_mask = 5
+mass = 0.01
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_lquwl")
@@ -76,7 +132,6 @@ transform = Transform3D(0.25000006, 0, 0, 0, 0.25, 0, 0, 0, 0.25000006, 0.504039
 transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.5130805, 0, -1.5443567)
 mesh = SubResource("ArrayMesh_u63mc")
 skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_me0cc")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="DiamondMesh"]
 transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, -0.17191377, 0, 0.5174552)
@@ -87,3 +142,5 @@ light_energy = 5.0
 transform = Transform3D(0.9999999, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 0.9999999, 0.20855832, 0, -0.62775433)
 light_color = Color(0, 1, 1, 1)
 light_energy = 5.0
+
+[editable path="PersonMesh"]
