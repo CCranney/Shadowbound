@@ -11,10 +11,13 @@ const SPEED = 20.0
 @onready var person_mesh: Node3D = $PersonMesh
 @export var max_tilt_angle := 40.0
 @export var tilt_speed := 6.0
+@export var diamond_speed_multiplier := 2.0
 
 @export var mouse_sensitivity := 0.00075
 @export var vertical_min_boundary: float = -60
 @export var vertical_max_boundary: float = 10
+
+var speed_multiplier = 1.0
 
 var _looking_direction := Vector2.ZERO
 enum PlayerHolding {
@@ -31,6 +34,7 @@ var player_holding_status = PlayerHolding.NOTHING:
 		elif new_value == PlayerHolding.DIAMOND:
 			basket_mesh.visible = false
 			diamond_mesh.visible = true
+			speed_multiplier = diamond_speed_multiplier
 		else:
 			basket_mesh.visible = false
 			diamond_mesh.visible = false
@@ -50,11 +54,11 @@ func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var direction := (horizontal_pivot.global_transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+		velocity.x = direction.x * SPEED * speed_multiplier
+		velocity.z = direction.z * SPEED * speed_multiplier
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, SPEED * speed_multiplier)
+		velocity.z = move_toward(velocity.z, 0, SPEED * speed_multiplier)
 
 	move_and_slide()
 	apply_mesh_tilt(direction, delta)
