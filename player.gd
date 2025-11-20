@@ -6,7 +6,7 @@ const SPEED = 20.0
 @onready var spring_arm : SpringArm3D = $SpringArm3D
 @onready var horizontal_pivot : Node3D = $HorizontalPivot
 @onready var vertical_pivot : Node3D = $HorizontalPivot/VerticalPivot
-@onready var basket_mesh : MeshInstance3D = $BasketMesh
+@onready var basket_mesh : Node3D = $BasketMesh
 @onready var diamond_mesh : MeshInstance3D = $DiamondMesh
 
 @export var mouse_sensitivity := 0.00075

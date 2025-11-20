@@ -1,15 +1,13 @@
 [gd_scene load_steps=10 format=4 uid="uid://cstg4rttt83mf"]
 
 [ext_resource type="Script" uid="uid://cldbhk80vvyf3" path="res://player.gd" id="1_u63mc"]
+[ext_resource type="PackedScene" uid="uid://fv4x0fu4jr0u" path="res://assets/AppleBasket.blend" id="2_bms3g"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_1bvp3"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lquwl"]
 
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_ig7tw"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_u63mc"]
-size = Vector3(0.25, 0.25, 0.25)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oe8r1"]
 
@@ -49,42 +47,41 @@ emission_enabled = true
 emission = Color(5.7756904e-07, 0.7649926, 0.81166863, 1)
 emission_energy_multiplier = 5.0
 
-[node name="Player" type="CharacterBody3D" unique_id=1608778751]
+[node name="Player" type="CharacterBody3D"]
 transform = Transform3D(-0.94899714, 0, -0.31528464, 0, 1, 0, 0.31528464, 0, -0.94899714, 0, 0, 0)
 script = ExtResource("1_u63mc")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=975056830]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_1bvp3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1433184720]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_lquwl")
 
-[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1177382567]
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.90630776, 0.42261827, 0, -0.42261827, 0.90630776, 0, 0, 0)
 shape = SubResource("SeparationRayShape3D_ig7tw")
 spring_length = 4.0
 
-[node name="RemoteTransform3D" type="RemoteTransform3D" parent="SpringArm3D" unique_id=1848209804]
+[node name="RemoteTransform3D" type="RemoteTransform3D" parent="SpringArm3D"]
 remote_path = NodePath("../../../MirrorWorldViewport/Camera3D")
 
-[node name="Camera3D" type="Camera3D" parent="SpringArm3D/RemoteTransform3D" unique_id=166699866]
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D/RemoteTransform3D"]
 transform = Transform3D(1.0000001, -1.4901161e-08, 2.9802322e-08, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
 cull_mask = 1048567
 
-[node name="BasketMesh" type="MeshInstance3D" parent="." unique_id=1294418295]
-transform = Transform3D(1.0000011, 0, 2.9802322e-08, 0, 1.0000002, 0, 0, 0, 1.000001, 0.3657905, 0.20535728, -1.589634)
-mesh = SubResource("BoxMesh_u63mc")
+[node name="BasketMesh" parent="." instance=ExtResource("2_bms3g")]
+transform = Transform3D(0.25000006, 0, 0, 0, 0.25, 0, 0, 0, 0.25000006, 0.50403917, -0.16538602, -1.5171427)
 
-[node name="HorizontalPivot" type="Node3D" parent="." unique_id=1418860843]
+[node name="HorizontalPivot" type="Node3D" parent="."]
 
-[node name="VerticalPivot" type="Node3D" parent="HorizontalPivot" unique_id=1406272575]
+[node name="VerticalPivot" type="Node3D" parent="HorizontalPivot"]
 
-[node name="DiamondMesh" type="MeshInstance3D" parent="." unique_id=88025743]
+[node name="DiamondMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0.5130805, 0, -1.5443567)
 mesh = SubResource("ArrayMesh_u63mc")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_bms3g")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="DiamondMesh" unique_id=2079733702]
+[node name="OmniLight3D" type="OmniLight3D" parent="DiamondMesh"]
 light_color = Color(0, 1, 1, 1)
 light_energy = 5.0
