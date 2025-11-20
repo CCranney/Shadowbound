@@ -1,7 +1,7 @@
 extends StaticBody3D
 
 @onready var area_3d: Area3D = $Area3D
-@onready var basket_mesh: MeshInstance3D = $Basket
+@onready var basket_mesh: Node3D = $Basket
 
 
 @export var is_sheep_target: bool = false
@@ -15,7 +15,9 @@ extends StaticBody3D
 
 func _ready() -> void:
 	basket_mesh.visible = is_basket_present
-	NavigationServer3D.map_set_active(get_world_3d().navigation_map, false)
+	if is_sheep_target:
+		NavigationServer3D.map_set_active(get_world_3d().navigation_map, is_basket_present)
+
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body is not CharacterBody3D: return

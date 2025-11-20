@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bmym8ayu12lb4" path="res://assets/AppleTree.blend" id="1_0fpmq"]
 [ext_resource type="Script" uid="uid://b5lw78srrlekx" path="res://nodes/apple_tree_node.gd" id="1_e8lvf"]
+[ext_resource type="PackedScene" uid="uid://fv4x0fu4jr0u" path="res://assets/AppleBasket.blend" id="3_3b51s"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_0fpmq"]
 radius = 1.5
@@ -10,26 +11,23 @@ radius = 1.5
 height = 5.0
 radius = 5.0
 
-[sub_resource type="BoxMesh" id="BoxMesh_e8lvf"]
-
-[node name="AppleTree" type="StaticBody3D" unique_id=1225790030 groups=["mirrorable_object"]]
+[node name="AppleTree" type="StaticBody3D" groups=["mirrorable_object"]]
 script = ExtResource("1_e8lvf")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1740963775]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.167038, 0)
 shape = SubResource("CylinderShape3D_0fpmq")
 
-[node name="AppleTreeMesh" parent="." unique_id=359632094 instance=ExtResource("1_0fpmq")]
+[node name="AppleTreeMesh" parent="." instance=ExtResource("1_0fpmq")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
 
-[node name="Area3D" type="Area3D" parent="." unique_id=537915705]
+[node name="Area3D" type="Area3D" parent="."]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=267560664]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
 shape = SubResource("CylinderShape3D_jybci")
 
-[node name="Basket" type="MeshInstance3D" parent="." unique_id=1760965531]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -2.9875984)
-mesh = SubResource("BoxMesh_e8lvf")
+[node name="Basket" parent="." instance=ExtResource("3_3b51s")]
+transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, -3.5680032)
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

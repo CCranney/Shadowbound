@@ -103,20 +103,20 @@ size = Vector3(1, 10, 10)
 size = Vector3(30, 0.1, 30)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5vw27"]
-size = Vector3(1, 10, 70)
+size = Vector3(1, 15, 70)
 
-[node name="Node3D" type="Node3D" unique_id=1526244692]
+[node name="Node3D" type="Node3D"]
 script = ExtResource("1_lquwl")
 
-[node name="CurrentEnvironment" type="WorldEnvironment" parent="." unique_id=118705669]
+[node name="CurrentEnvironment" type="WorldEnvironment" parent="."]
 
-[node name="SunDirectionalLight" type="DirectionalLight3D" parent="." unique_id=338103326]
+[node name="SunDirectionalLight" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 layers = 4
 light_cull_mask = 4294967293
 shadow_enabled = true
 
-[node name="MoonDirectionalLight" type="DirectionalLight3D" parent="." unique_id=2059283540]
+[node name="MoonDirectionalLight" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 layers = 8
 light_color = Color(7.70092e-07, 0.5915584, 0.7427997, 1)
@@ -124,407 +124,407 @@ light_energy = 0.5
 light_cull_mask = 4294967293
 shadow_enabled = true
 
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=383095356]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_kek77")
 
-[node name="BarrierTrees" type="Node3D" parent="NavigationRegion3D" unique_id=1766749956]
+[node name="BarrierTrees" type="Node3D" parent="NavigationRegion3D"]
 
-[node name="PineTree" parent="NavigationRegion3D/BarrierTrees" unique_id=250622884 instance=ExtResource("5_lquwl")]
+[node name="PineTree" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.084133, 0, -130.38531)
 
-[node name="PineTree2" parent="NavigationRegion3D/BarrierTrees" unique_id=1435268500 instance=ExtResource("5_lquwl")]
+[node name="PineTree2" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.810146, 0, -128.3343)
 
-[node name="PineTree3" parent="NavigationRegion3D/BarrierTrees" unique_id=407534092 instance=ExtResource("5_lquwl")]
+[node name="PineTree3" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.536102, 0, -125.697296)
 
-[node name="PineTree4" parent="NavigationRegion3D/BarrierTrees" unique_id=1412500273 instance=ExtResource("5_lquwl")]
+[node name="PineTree4" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.434082, 0, -121.009285)
 
-[node name="PineTree5" parent="NavigationRegion3D/BarrierTrees" unique_id=1337106364 instance=ExtResource("5_lquwl")]
+[node name="PineTree5" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.91809, 0, -115.442276)
 
-[node name="PineTree6" parent="NavigationRegion3D/BarrierTrees" unique_id=65152330 instance=ExtResource("5_lquwl")]
+[node name="PineTree6" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.332123, 0, -108.99626)
 
-[node name="PineTree7" parent="NavigationRegion3D/BarrierTrees" unique_id=147877791 instance=ExtResource("5_lquwl")]
+[node name="PineTree7" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.141113, 0, -102.84324)
 
-[node name="PineTree18" parent="NavigationRegion3D/BarrierTrees" unique_id=412475536 instance=ExtResource("5_lquwl")]
+[node name="PineTree18" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.013062, 0, -110.16824)
 
-[node name="PineTree19" parent="NavigationRegion3D/BarrierTrees" unique_id=1259224006 instance=ExtResource("5_lquwl")]
+[node name="PineTree19" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.083038, 0, -104.601234)
 
-[node name="PineTree20" parent="NavigationRegion3D/BarrierTrees" unique_id=1056771271 instance=ExtResource("5_lquwl")]
+[node name="PineTree20" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.79007, 0, -98.74122)
 
-[node name="PineTree21" parent="NavigationRegion3D/BarrierTrees" unique_id=356098285 instance=ExtResource("5_lquwl")]
+[node name="PineTree21" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.79007, 0, -92.58821)
 
-[node name="PineTree22" parent="NavigationRegion3D/BarrierTrees" unique_id=1871341206 instance=ExtResource("5_lquwl")]
+[node name="PineTree22" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.446045, 0, -87.02119)
 
-[node name="PineTree23" parent="NavigationRegion3D/BarrierTrees" unique_id=1186176150 instance=ExtResource("5_lquwl")]
+[node name="PineTree23" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8090515, 0, -81.45417)
 
-[node name="PineTree24" parent="NavigationRegion3D/BarrierTrees" unique_id=1968416898 instance=ExtResource("5_lquwl")]
+[node name="PineTree24" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1720581, 0, -75.59416)
 
-[node name="PineTree25" parent="NavigationRegion3D/BarrierTrees" unique_id=1888839628 instance=ExtResource("5_lquwl")]
+[node name="PineTree25" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8789673, 0, -70.02716)
 
-[node name="PineTree26" parent="NavigationRegion3D/BarrierTrees" unique_id=1243743736 instance=ExtResource("5_lquwl")]
+[node name="PineTree26" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.222992, 0, -63.288143)
 
-[node name="PineTree27" parent="NavigationRegion3D/BarrierTrees" unique_id=9420900 instance=ExtResource("5_lquwl")]
+[node name="PineTree27" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3439941, 0, -58.014126)
 
-[node name="PineTree28" parent="NavigationRegion3D/BarrierTrees" unique_id=770311761 instance=ExtResource("5_lquwl")]
+[node name="PineTree28" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.585968, 0, -51.861107)
 
-[node name="PineTree29" parent="NavigationRegion3D/BarrierTrees" unique_id=662820606 instance=ExtResource("5_lquwl")]
+[node name="PineTree29" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2930603, 0, -45.708084)
 
-[node name="PineTree30" parent="NavigationRegion3D/BarrierTrees" unique_id=1913745065 instance=ExtResource("5_lquwl")]
+[node name="PineTree30" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58602905, 0, -39.55506)
 
-[node name="PineTree31" parent="NavigationRegion3D/BarrierTrees" unique_id=817767203 instance=ExtResource("5_lquwl")]
+[node name="PineTree31" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.636963, 0, -34.281048)
 
-[node name="PineTree32" parent="NavigationRegion3D/BarrierTrees" unique_id=77301106 instance=ExtResource("5_lquwl")]
+[node name="PineTree32" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.738983, 0, -29.007034)
 
-[node name="PineTree33" parent="NavigationRegion3D/BarrierTrees" unique_id=2070123585 instance=ExtResource("5_lquwl")]
+[node name="PineTree33" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.426971, 0, -24.319023)
 
-[node name="PineTree34" parent="NavigationRegion3D/BarrierTrees" unique_id=27696422 instance=ExtResource("5_lquwl")]
+[node name="PineTree34" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.993988, 0, -20.510017)
 
-[node name="PineTree35" parent="NavigationRegion3D/BarrierTrees" unique_id=426224907 instance=ExtResource("5_lquwl")]
+[node name="PineTree35" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.268005, 0, -17.873013)
 
-[node name="PineTree36" parent="NavigationRegion3D/BarrierTrees" unique_id=386746689 instance=ExtResource("5_lquwl")]
+[node name="PineTree36" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.42102, 0, -16.115013)
 
-[node name="PineTree37" parent="NavigationRegion3D/BarrierTrees" unique_id=895053807 instance=ExtResource("5_lquwl")]
+[node name="PineTree37" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.160034, 0, -16.115013)
 
-[node name="PineTree38" parent="NavigationRegion3D/BarrierTrees" unique_id=1553805233 instance=ExtResource("5_lquwl")]
+[node name="PineTree38" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.31305, 0, -19.33802)
 
-[node name="PineTree39" parent="NavigationRegion3D/BarrierTrees" unique_id=864819588 instance=ExtResource("5_lquwl")]
+[node name="PineTree39" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.294083, 0, -23.733025)
 
-[node name="PineTree40" parent="NavigationRegion3D/BarrierTrees" unique_id=1232281754 instance=ExtResource("5_lquwl")]
+[node name="PineTree40" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.689087, 0, -29.886044)
 
-[node name="PineTree41" parent="NavigationRegion3D/BarrierTrees" unique_id=99997071 instance=ExtResource("5_lquwl")]
+[node name="PineTree41" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.32608, 0, -36.625065)
 
-[node name="PineTree42" parent="NavigationRegion3D/BarrierTrees" unique_id=15179969 instance=ExtResource("5_lquwl")]
+[node name="PineTree42" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.74008, 0, -43.95009)
 
-[node name="PineTree43" parent="NavigationRegion3D/BarrierTrees" unique_id=335696302 instance=ExtResource("5_lquwl")]
+[node name="PineTree43" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.396072, 0, -50.68911)
 
-[node name="PineTree44" parent="NavigationRegion3D/BarrierTrees" unique_id=1125352811 instance=ExtResource("5_lquwl")]
+[node name="PineTree44" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.82907, 0, -48.6381)
 
-[node name="PineTree45" parent="NavigationRegion3D/BarrierTrees" unique_id=111521837 instance=ExtResource("5_lquwl")]
+[node name="PineTree45" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.31305, 0, -43.95009)
 
-[node name="PineTree46" parent="NavigationRegion3D/BarrierTrees" unique_id=905691778 instance=ExtResource("5_lquwl")]
+[node name="PineTree46" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.797028, 0, -38.969067)
 
-[node name="PineTree47" parent="NavigationRegion3D/BarrierTrees" unique_id=1396839356 instance=ExtResource("5_lquwl")]
+[node name="PineTree47" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.10901, 0, -35.45307)
 
-[node name="PineTree48" parent="NavigationRegion3D/BarrierTrees" unique_id=58313961 instance=ExtResource("5_lquwl")]
+[node name="PineTree48" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.834991, 0, -38.090076)
 
-[node name="PineTree49" parent="NavigationRegion3D/BarrierTrees" unique_id=523863726 instance=ExtResource("5_lquwl")]
+[node name="PineTree49" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.439972, 0, -43.0711)
 
-[node name="PineTree50" parent="NavigationRegion3D/BarrierTrees" unique_id=1026898543 instance=ExtResource("5_lquwl")]
+[node name="PineTree50" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.92395, 0, -48.931107)
 
-[node name="PineTree51" parent="NavigationRegion3D/BarrierTrees" unique_id=287784384 instance=ExtResource("5_lquwl")]
+[node name="PineTree51" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.751953, 0, -55.37712)
 
-[node name="PineTree52" parent="NavigationRegion3D/BarrierTrees" unique_id=1856498969 instance=ExtResource("5_lquwl")]
+[node name="PineTree52" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.165955, 0, -62.70214)
 
-[node name="PineTree53" parent="NavigationRegion3D/BarrierTrees" unique_id=1354836576 instance=ExtResource("5_lquwl")]
+[node name="PineTree53" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.11496, 0, -69.734146)
 
-[node name="PineTree54" parent="NavigationRegion3D/BarrierTrees" unique_id=645390223 instance=ExtResource("5_lquwl")]
+[node name="PineTree54" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.649933, 0, -75.59417)
 
-[node name="PineTree55" parent="NavigationRegion3D/BarrierTrees" unique_id=1755920213 instance=ExtResource("5_lquwl")]
+[node name="PineTree55" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.770935, 0, -82.33319)
 
-[node name="PineTree56" parent="NavigationRegion3D/BarrierTrees" unique_id=2121721195 instance=ExtResource("5_lquwl")]
+[node name="PineTree56" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.579956, 0, -88.19321)
 
-[node name="PineTree57" parent="NavigationRegion3D/BarrierTrees" unique_id=1831028327 instance=ExtResource("5_lquwl")]
+[node name="PineTree57" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.904968, 0, -91.123215)
 
-[node name="PineTree58" parent="NavigationRegion3D/BarrierTrees" unique_id=293805578 instance=ExtResource("5_lquwl")]
+[node name="PineTree58" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.764984, 0, -95.22522)
 
-[node name="PineTree59" parent="NavigationRegion3D/BarrierTrees" unique_id=1544904377 instance=ExtResource("5_lquwl")]
+[node name="PineTree59" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.885986, 0, -101.37824)
 
-[node name="PineTree60" parent="NavigationRegion3D/BarrierTrees" unique_id=1385153324 instance=ExtResource("5_lquwl")]
+[node name="PineTree60" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.904968, 0, -106.35925)
 
-[node name="PineTree61" parent="NavigationRegion3D/BarrierTrees" unique_id=666875205 instance=ExtResource("5_lquwl")]
+[node name="PineTree61" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.21695, 0, -111.34027)
 
-[node name="PineTree62" parent="NavigationRegion3D/BarrierTrees" unique_id=1408082941 instance=ExtResource("5_lquwl")]
+[node name="PineTree62" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.82196, 0, -115.442276)
 
-[node name="PineTree63" parent="NavigationRegion3D/BarrierTrees" unique_id=482956462 instance=ExtResource("5_lquwl")]
+[node name="PineTree63" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.133942, 0, -118.372284)
 
-[node name="PineTree64" parent="NavigationRegion3D/BarrierTrees" unique_id=351926503 instance=ExtResource("5_lquwl")]
+[node name="PineTree64" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5668945, 0, -117.786285)
 
-[node name="PineTree65" parent="NavigationRegion3D/BarrierTrees" unique_id=430308021 instance=ExtResource("5_lquwl")]
+[node name="PineTree65" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2928772, 0, -116.028275)
 
-[node name="PineTree67" parent="NavigationRegion3D/BarrierTrees" unique_id=1537463545 instance=ExtResource("5_lquwl")]
+[node name="PineTree67" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6881104, 0, -114.391266)
 
-[node name="PineTree68" parent="NavigationRegion3D/BarrierTrees" unique_id=266090272 instance=ExtResource("5_lquwl")]
+[node name="PineTree68" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.56804, 0, -65.33914)
 
-[node name="PineTree69" parent="NavigationRegion3D/BarrierTrees" unique_id=1570847828 instance=ExtResource("5_lquwl")]
+[node name="PineTree69" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.708023, 0, -62.11614)
 
-[node name="PineTree70" parent="NavigationRegion3D/BarrierTrees" unique_id=2115369664 instance=ExtResource("5_lquwl")]
+[node name="PineTree70" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.31302, 0, -58.307133)
 
-[node name="PineTree71" parent="NavigationRegion3D/BarrierTrees" unique_id=1725119222 instance=ExtResource("5_lquwl")]
+[node name="PineTree71" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.918, 0, -55.670124)
 
-[node name="PineTree72" parent="NavigationRegion3D/BarrierTrees" unique_id=712702 instance=ExtResource("5_lquwl")]
+[node name="PineTree72" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.694977, 0, -59.186123)
 
-[node name="PineTree73" parent="NavigationRegion3D/BarrierTrees" unique_id=1776317680 instance=ExtResource("5_lquwl")]
+[node name="PineTree73" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.22998, 0, -65.632126)
 
-[node name="PineTree74" parent="NavigationRegion3D/BarrierTrees" unique_id=1506981783 instance=ExtResource("5_lquwl")]
+[node name="PineTree74" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.643982, 0, -71.78515)
 
-[node name="PineTree75" parent="NavigationRegion3D/BarrierTrees" unique_id=1754996282 instance=ExtResource("5_lquwl")]
+[node name="PineTree75" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.81598, 0, -78.52417)
 
-[node name="PineTree76" parent="NavigationRegion3D/BarrierTrees" unique_id=1035017720 instance=ExtResource("5_lquwl")]
+[node name="PineTree76" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.675995, 0, -81.74718)
 
-[node name="PineTree77" parent="NavigationRegion3D/BarrierTrees" unique_id=1005068279 instance=ExtResource("5_lquwl")]
+[node name="PineTree77" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.657013, 0, -87.90019)
 
-[node name="PineTree78" parent="NavigationRegion3D/BarrierTrees" unique_id=2136302003 instance=ExtResource("5_lquwl")]
+[node name="PineTree78" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.829025, 0, -94.93222)
 
-[node name="PineTree79" parent="NavigationRegion3D/BarrierTrees" unique_id=1677453672 instance=ExtResource("5_lquwl")]
+[node name="PineTree79" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.829025, 0, -103.72224)
 
-[node name="PineTree80" parent="NavigationRegion3D/BarrierTrees" unique_id=1467796895 instance=ExtResource("5_lquwl")]
+[node name="PineTree80" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.020004, 0, -109.289246)
 
-[node name="PineTree81" parent="NavigationRegion3D/BarrierTrees" unique_id=1293171420 instance=ExtResource("5_lquwl")]
+[node name="PineTree81" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.624985, 0, -115.14927)
 
-[node name="PineTree82" parent="NavigationRegion3D/BarrierTrees" unique_id=1896507383 instance=ExtResource("5_lquwl")]
+[node name="PineTree82" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.815994, 0, -120.13028)
 
-[node name="PineTree83" parent="NavigationRegion3D/BarrierTrees" unique_id=552709589 instance=ExtResource("5_lquwl")]
+[node name="PineTree83" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.420975, 0, -124.81829)
 
-[node name="PineTree84" parent="NavigationRegion3D/BarrierTrees" unique_id=1259005755 instance=ExtResource("5_lquwl")]
+[node name="PineTree84" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.834976, 0, -131.55731)
 
-[node name="PineTree119" parent="NavigationRegion3D/BarrierTrees" unique_id=1253236508 instance=ExtResource("5_lquwl")]
+[node name="PineTree119" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.759018, 0, -178.73041)
 
-[node name="PineTree120" parent="NavigationRegion3D/BarrierTrees" unique_id=871255478 instance=ExtResource("5_lquwl")]
+[node name="PineTree120" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.415024, 0, -173.16339)
 
-[node name="PineTree121" parent="NavigationRegion3D/BarrierTrees" unique_id=1640892781 instance=ExtResource("5_lquwl")]
+[node name="PineTree121" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.192, 0, -169.06139)
 
-[node name="PineTree122" parent="NavigationRegion3D/BarrierTrees" unique_id=559671510 instance=ExtResource("5_lquwl")]
+[node name="PineTree122" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.848007, 0, -163.78737)
 
-[node name="PineTree123" parent="NavigationRegion3D/BarrierTrees" unique_id=883850164 instance=ExtResource("5_lquwl")]
+[node name="PineTree123" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.950012, 0, -160.27138)
 
-[node name="PineTree124" parent="NavigationRegion3D/BarrierTrees" unique_id=367318561 instance=ExtResource("5_lquwl")]
+[node name="PineTree124" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.810028, 0, -157.34135)
 
-[node name="PineTree125" parent="NavigationRegion3D/BarrierTrees" unique_id=1733625248 instance=ExtResource("5_lquwl")]
+[node name="PineTree125" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.549026, 0, -155.29036)
 
-[node name="PineTree126" parent="NavigationRegion3D/BarrierTrees" unique_id=299544757 instance=ExtResource("5_lquwl")]
+[node name="PineTree126" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.99507, 0, -154.99734)
 
-[node name="PineTree85" parent="NavigationRegion3D/BarrierTrees" unique_id=1501199674 instance=ExtResource("5_lquwl")]
+[node name="PineTree85" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.670044, 0, -69.14815)
 
-[node name="PineTree86" parent="NavigationRegion3D/BarrierTrees" unique_id=410030571 instance=ExtResource("5_lquwl")]
+[node name="PineTree86" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.84204, 0, -76.47317)
 
-[node name="PineTree87" parent="NavigationRegion3D/BarrierTrees" unique_id=402512603 instance=ExtResource("5_lquwl")]
+[node name="PineTree87" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.084045, 0, -82.62619)
 
-[node name="PineTree88" parent="NavigationRegion3D/BarrierTrees" unique_id=663063920 instance=ExtResource("5_lquwl")]
+[node name="PineTree88" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.205032, 0, -89.65821)
 
-[node name="PineTree89" parent="NavigationRegion3D/BarrierTrees" unique_id=367063672 instance=ExtResource("5_lquwl")]
+[node name="PineTree89" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.033035, 0, -97.86223)
 
-[node name="PineTree90" parent="NavigationRegion3D/BarrierTrees" unique_id=2133522148 instance=ExtResource("5_lquwl")]
+[node name="PineTree90" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.256027, 0, -105.18723)
 
-[node name="PineTree91" parent="NavigationRegion3D/BarrierTrees" unique_id=949732305 instance=ExtResource("5_lquwl")]
+[node name="PineTree91" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.237045, 0, -110.754265)
 
-[node name="PineTree92" parent="NavigationRegion3D/BarrierTrees" unique_id=446818080 instance=ExtResource("5_lquwl")]
+[node name="PineTree92" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.632065, 0, -116.32127)
 
-[node name="PineTree93" parent="NavigationRegion3D/BarrierTrees" unique_id=1064892421 instance=ExtResource("5_lquwl")]
+[node name="PineTree93" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.683075, 0, -123.93929)
 
-[node name="PineTree94" parent="NavigationRegion3D/BarrierTrees" unique_id=1521080652 instance=ExtResource("5_lquwl")]
+[node name="PineTree94" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.61307, 0, -130.38531)
 
-[node name="PineTree95" parent="NavigationRegion3D/BarrierTrees" unique_id=296442353 instance=ExtResource("5_lquwl")]
+[node name="PineTree95" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.61307, 0, -137.41733)
 
-[node name="PineTree96" parent="NavigationRegion3D/BarrierTrees" unique_id=675684284 instance=ExtResource("5_lquwl")]
+[node name="PineTree96" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.95709, 0, -145.32835)
 
-[node name="PineTree97" parent="NavigationRegion3D/BarrierTrees" unique_id=494866382 instance=ExtResource("5_lquwl")]
+[node name="PineTree97" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.594086, 0, -152.06735)
 
-[node name="PineTree98" parent="NavigationRegion3D/BarrierTrees" unique_id=1183021896 instance=ExtResource("5_lquwl")]
+[node name="PineTree98" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.645096, 0, -158.51337)
 
-[node name="PineTree99" parent="NavigationRegion3D/BarrierTrees" unique_id=798352182 instance=ExtResource("5_lquwl")]
+[node name="PineTree99" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.35208, 0, -164.95938)
 
-[node name="PineTree100" parent="NavigationRegion3D/BarrierTrees" unique_id=178847272 instance=ExtResource("5_lquwl")]
+[node name="PineTree100" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.66408, 0, -167.59639)
 
-[node name="PineTree101" parent="NavigationRegion3D/BarrierTrees" unique_id=1140527700 instance=ExtResource("5_lquwl")]
+[node name="PineTree101" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.09708, 0, -168.76839)
 
-[node name="PineTree102" parent="NavigationRegion3D/BarrierTrees" unique_id=1861595918 instance=ExtResource("5_lquwl")]
+[node name="PineTree102" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.237045, 0, -169.06139)
 
-[node name="PineTree103" parent="NavigationRegion3D/BarrierTrees" unique_id=111141397 instance=ExtResource("5_lquwl")]
+[node name="PineTree103" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.670044, 0, -169.06139)
 
-[node name="PineTree110" parent="NavigationRegion3D/BarrierTrees" unique_id=64298275 instance=ExtResource("5_lquwl")]
+[node name="PineTree110" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.390045, 0, -143.27734)
 
-[node name="PineTree111" parent="NavigationRegion3D/BarrierTrees" unique_id=98047378 instance=ExtResource("5_lquwl")]
+[node name="PineTree111" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.116074, 0, -143.57034)
 
-[node name="PineTree112" parent="NavigationRegion3D/BarrierTrees" unique_id=350241471 instance=ExtResource("5_lquwl")]
+[node name="PineTree112" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.67006, 0, -143.86333)
 
-[node name="PineTree113" parent="NavigationRegion3D/BarrierTrees" unique_id=97371013 instance=ExtResource("5_lquwl")]
+[node name="PineTree113" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.224014, 0, -144.44934)
 
-[node name="PineTree114" parent="NavigationRegion3D/BarrierTrees" unique_id=961132091 instance=ExtResource("5_lquwl")]
+[node name="PineTree114" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.53595, 0, -146.79335)
 
-[node name="PineTree115" parent="NavigationRegion3D/BarrierTrees" unique_id=1837662228 instance=ExtResource("5_lquwl")]
+[node name="PineTree115" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.918, 0, -158.22035)
 
-[node name="PineTree116" parent="NavigationRegion3D/BarrierTrees" unique_id=480541382 instance=ExtResource("5_lquwl")]
+[node name="PineTree116" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.866943, 0, -152.36035)
 
-[node name="PineTree117" parent="NavigationRegion3D/BarrierTrees" unique_id=757509191 instance=ExtResource("5_lquwl")]
+[node name="PineTree117" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.108994, 0, -146.20734)
 
-[node name="PineTree118" parent="NavigationRegion3D/BarrierTrees" unique_id=170497325 instance=ExtResource("5_lquwl")]
+[node name="PineTree118" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.503983, 0, -140.34732)
 
-[node name="PineTree127" parent="NavigationRegion3D/BarrierTrees" unique_id=1372111169 instance=ExtResource("5_lquwl")]
+[node name="PineTree127" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.778, 0, -136.2453)
 
-[node name="PineTree128" parent="NavigationRegion3D/BarrierTrees" unique_id=212534574 instance=ExtResource("5_lquwl")]
+[node name="PineTree128" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.345016, 0, -132.7293)
 
-[node name="PineTree129" parent="NavigationRegion3D/BarrierTrees" unique_id=513211948 instance=ExtResource("5_lquwl")]
+[node name="PineTree129" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.619003, 0, -128.92029)
 
-[node name="PineTree130" parent="NavigationRegion3D/BarrierTrees" unique_id=543394759 instance=ExtResource("5_lquwl")]
+[node name="PineTree130" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.963028, 0, -122.767265)
 
-[node name="PineTree131" parent="NavigationRegion3D/BarrierTrees" unique_id=99558384 instance=ExtResource("5_lquwl")]
+[node name="PineTree131" parent="NavigationRegion3D/BarrierTrees" instance=ExtResource("5_lquwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.912003, 0, -116.61426)
 
-[node name="Shadowbound_assets" parent="NavigationRegion3D" unique_id=148190237 instance=ExtResource("1_ig7tw")]
+[node name="Shadowbound_assets" parent="NavigationRegion3D" instance=ExtResource("1_ig7tw")]
 
-[node name="statue_boolean_holecutter" parent="NavigationRegion3D/Shadowbound_assets" index="7" unique_id=233220652]
+[node name="statue_boolean_holecutter" parent="NavigationRegion3D/Shadowbound_assets" index="7"]
 visible = false
 
-[node name="Diamond" parent="NavigationRegion3D/Shadowbound_assets" index="8" unique_id=2141231543]
+[node name="Diamond" parent="NavigationRegion3D/Shadowbound_assets" index="8"]
 visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_efxa6")
 
-[node name="LightDiamondInsertion" parent="NavigationRegion3D/Shadowbound_assets" unique_id=285348371 instance=ExtResource("4_4c57u")]
+[node name="LightDiamondInsertion" parent="NavigationRegion3D/Shadowbound_assets" instance=ExtResource("4_4c57u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.335013, 3.2292163, -195.06566)
 
-[node name="DarkDiamondInsertion" parent="NavigationRegion3D/Shadowbound_assets" unique_id=747752766 instance=ExtResource("4_4c57u")]
+[node name="DarkDiamondInsertion" parent="NavigationRegion3D/Shadowbound_assets" instance=ExtResource("4_4c57u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.335, 3.229, 195.066)
 is_diamond_inserted = true
 
-[node name="BarrierFences" type="Node3D" parent="NavigationRegion3D" unique_id=1286856559]
+[node name="BarrierFences" type="Node3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.828117, 0, -109.30382)
 
-[node name="Fence" parent="NavigationRegion3D/BarrierFences" unique_id=1103413444 instance=ExtResource("5_efxa6")]
+[node name="Fence" parent="NavigationRegion3D/BarrierFences" instance=ExtResource("5_efxa6")]
 transform = Transform3D(0.028340315, 0, 0.9995983, 0, 1, 0, -0.9995983, 0, 0.028340315, -4.430372, 0, 0.38193512)
 
-[node name="Fence2" parent="NavigationRegion3D/BarrierFences" unique_id=1467770745 instance=ExtResource("5_efxa6")]
+[node name="Fence2" parent="NavigationRegion3D/BarrierFences" instance=ExtResource("5_efxa6")]
 transform = Transform3D(0.028340315, 0, 0.9995983, 0, 1, 0, -0.9995983, 0, 0.028340315, 4.8169613, 0, 0.6565857)
 
-[node name="Player" parent="." unique_id=1608778751 instance=ExtResource("3_272bh")]
+[node name="Player" parent="." instance=ExtResource("3_272bh")]
 transform = Transform3D(-0.9489969, 0, -0.31528455, 0, 1, 0, 0.31528455, 0, -0.9489969, 11.946057, 17.222746, -199.57198)
 
-[node name="Mirror" type="MeshInstance3D" parent="." unique_id=1383769869]
+[node name="Mirror" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0, 25, 0)
 layers = 2
 material_override = SubResource("ShaderMaterial_1bvp3")
 cast_shadow = 0
 mesh = SubResource("PlaneMesh_lquwl")
 
-[node name="BackupMirrorForHalfwayThrough" type="MeshInstance3D" parent="." unique_id=460974456]
+[node name="BackupMirrorForHalfwayThrough" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0, 25, 0.5)
 layers = 2
 material_override = SubResource("ShaderMaterial_1bvp3")
 cast_shadow = 0
 mesh = SubResource("PlaneMesh_lquwl")
 
-[node name="MirrorWorldViewport" type="SubViewport" parent="." unique_id=867820804]
+[node name="MirrorWorldViewport" type="SubViewport" parent="."]
 size = Vector2i(2048, 512)
 
-[node name="Camera3D" type="Camera3D" parent="MirrorWorldViewport" unique_id=280807790]
+[node name="Camera3D" type="Camera3D" parent="MirrorWorldViewport"]
 transform = Transform3D(-0.9489969, 0.133245, -0.28574485, 0, 0.90630776, 0.42261827, 0.31528455, 0.40106344, -0.8600833, 11.946057, 17.222746, -199.57198)
 cull_mask = 1048569
 environment = SubResource("Environment_7mycd")
 current = true
 
-[node name="Obstacles" type="Node3D" parent="." unique_id=1764158771]
+[node name="Obstacles" type="Node3D" parent="."]
 
-[node name="Ramp" type="RigidBody3D" parent="Obstacles" unique_id=1221948340 groups=["mirrorable_object"]]
+[node name="Ramp" type="RigidBody3D" parent="Obstacles" groups=["mirrorable_object"]]
 transform = Transform3D(-0.4350741, 0, -0.90039456, 0, 1, 0, 0.90039456, 0, -0.4350741, 30.186771, 0, -118.15247)
 axis_lock_linear_y = true
 axis_lock_angular_x = true
@@ -533,1475 +533,1475 @@ mass = 0.5
 physics_material_override = SubResource("PhysicsMaterial_efxa6")
 script = ExtResource("8_dg77c")
 
-[node name="RampMesh" type="MeshInstance3D" parent="Obstacles/Ramp" unique_id=627159499]
+[node name="RampMesh" type="MeshInstance3D" parent="Obstacles/Ramp"]
 transform = Transform3D(0.9999998, 0, 0, 0, 1.2499998, 0, 0, 0, 0.9999998, 0, 1.234, 0)
 mesh = SubResource("ArrayMesh_0an1a")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_dg77c")
 
-[node name="WalkingRamp" type="CollisionShape3D" parent="Obstacles/Ramp" unique_id=1036859481]
+[node name="WalkingRamp" type="CollisionShape3D" parent="Obstacles/Ramp"]
 transform = Transform3D(1.0000005, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000005, 0.033241272, 0.991, -0.04076004)
 shape = SubResource("ConvexPolygonShape3D_dg77c")
 
-[node name="Area3D" type="Area3D" parent="Obstacles/Ramp" unique_id=412430244]
+[node name="Area3D" type="Area3D" parent="Obstacles/Ramp"]
 
-[node name="WalkingRamp" type="CollisionShape3D" parent="Obstacles/Ramp/Area3D" unique_id=246067805]
+[node name="WalkingRamp" type="CollisionShape3D" parent="Obstacles/Ramp/Area3D"]
 transform = Transform3D(1.0000005, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000005, 0.033241272, 0.991, -0.04076004)
 shape = SubResource("ConvexPolygonShape3D_ycdy4")
 
-[node name="Boulder" parent="Obstacles" unique_id=1458177157 instance=ExtResource("8_5vw27")]
+[node name="Boulder" parent="Obstacles" instance=ExtResource("8_5vw27")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.650436, 1.4125526, -51.484722)
 
-[node name="Sheeple" type="Node3D" parent="Obstacles" unique_id=721893393]
+[node name="Sheeple" type="Node3D" parent="Obstacles"]
 
-[node name="SheepleGroup" type="Node3D" parent="Obstacles/Sheeple" unique_id=1889958087]
+[node name="SheepleGroup" type="Node3D" parent="Obstacles/Sheeple"]
 transform = Transform3D(0.9045891, 0, -0.42628458, 0, 1, 0, 0.42628458, 0, 0.9045891, -22.752537, 0.3, -179.66125)
 
-[node name="Sheeple" parent="Obstacles/Sheeple/SheepleGroup" unique_id=616860901 instance=ExtResource("5_kek77")]
+[node name="Sheeple" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.17581, 0.3, 14.243515)
 
-[node name="Sheeple2" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1370529376 instance=ExtResource("5_kek77")]
+[node name="Sheeple2" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.4906445, 0.3, 15.470352)
 
-[node name="Sheeple3" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1054218918 instance=ExtResource("5_kek77")]
+[node name="Sheeple3" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.505899, 0.3, 12.993378)
 
-[node name="Sheeple4" parent="Obstacles/Sheeple/SheepleGroup" unique_id=2038735063 instance=ExtResource("5_kek77")]
+[node name="Sheeple4" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -6.953493, 0.3, 11.423126)
 
-[node name="Sheeple5" parent="Obstacles/Sheeple/SheepleGroup" unique_id=193822498 instance=ExtResource("5_kek77")]
+[node name="Sheeple5" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.1929836, 0.3, 14.095184)
 
-[node name="Sheeple6" parent="Obstacles/Sheeple/SheepleGroup" unique_id=2099538407 instance=ExtResource("5_kek77")]
+[node name="Sheeple6" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -9.8640995, 0.3, 10.543991)
 
-[node name="Sheeple7" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1343500849 instance=ExtResource("5_kek77")]
+[node name="Sheeple7" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.334154, 0.3, 7.45401)
 
-[node name="Sheeple8" parent="Obstacles/Sheeple/SheepleGroup" unique_id=205805206 instance=ExtResource("5_kek77")]
+[node name="Sheeple8" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.1323338, 0.3, 7.3332977)
 
-[node name="Sheeple9" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1525712423 instance=ExtResource("5_kek77")]
+[node name="Sheeple9" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.4399204, 0.3, 7.6026306)
 
-[node name="Sheeple10" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1521075464 instance=ExtResource("5_kek77")]
+[node name="Sheeple10" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.933836, 0.3, 10.178848)
 
-[node name="Sheeple11" parent="Obstacles/Sheeple/SheepleGroup" unique_id=2072120172 instance=ExtResource("5_kek77")]
+[node name="Sheeple11" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.2239094, 0.3, 4.574997)
 
-[node name="Sheeple12" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1885281125 instance=ExtResource("5_kek77")]
+[node name="Sheeple12" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.804121, 0.3, 4.0726776)
 
-[node name="Sheeple13" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1119695974 instance=ExtResource("5_kek77")]
+[node name="Sheeple13" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.937689, 0.3, 6.887726)
 
-[node name="Sheeple14" parent="Obstacles/Sheeple/SheepleGroup" unique_id=304782932 instance=ExtResource("5_kek77")]
+[node name="Sheeple14" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.615942, 0.3, 10.433289)
 
-[node name="Sheeple15" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1064445652 instance=ExtResource("5_kek77")]
+[node name="Sheeple15" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.217089, 0.3, 13.795227)
 
-[node name="Sheeple16" parent="Obstacles/Sheeple/SheepleGroup" unique_id=243184482 instance=ExtResource("5_kek77")]
+[node name="Sheeple16" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.818781, 0.3, 17.739044)
 
-[node name="Sheeple17" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1694735978 instance=ExtResource("5_kek77")]
+[node name="Sheeple17" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.908373, 0.3, 18.618027)
 
-[node name="Sheeple18" parent="Obstacles/Sheeple/SheepleGroup" unique_id=898067460 instance=ExtResource("5_kek77")]
+[node name="Sheeple18" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.1498165, 0.3, 17.771194)
 
-[node name="Sheeple19" parent="Obstacles/Sheeple/SheepleGroup" unique_id=740088410 instance=ExtResource("5_kek77")]
+[node name="Sheeple19" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.70179176, 0.3, 14.312119)
 
-[node name="Sheeple20" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1877197894 instance=ExtResource("5_kek77")]
+[node name="Sheeple20" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 0.20818806, 0.3, 10.507828)
 
-[node name="Sheeple21" parent="Obstacles/Sheeple/SheepleGroup" unique_id=932896739 instance=ExtResource("5_kek77")]
+[node name="Sheeple21" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -1.2555218, 0.3, 7.2155)
 
-[node name="Sheeple22" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1235550294 instance=ExtResource("5_kek77")]
+[node name="Sheeple22" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.0570278, 0.3, 4.2126007)
 
-[node name="Sheeple23" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1166415453 instance=ExtResource("5_kek77")]
+[node name="Sheeple23" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.196333, 0.3, 1.4991608)
 
-[node name="Sheeple24" parent="Obstacles/Sheeple/SheepleGroup" unique_id=2044656588 instance=ExtResource("5_kek77")]
+[node name="Sheeple24" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -8.699636, 0.3, 1.1045532)
 
-[node name="Sheeple25" parent="Obstacles/Sheeple/SheepleGroup" unique_id=325930286 instance=ExtResource("5_kek77")]
+[node name="Sheeple25" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.645544, 0.3, -0.30763245)
 
-[node name="Sheeple26" parent="Obstacles/Sheeple/SheepleGroup" unique_id=336401842 instance=ExtResource("5_kek77")]
+[node name="Sheeple26" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.9847355, 0.3, -4.1204834)
 
-[node name="Sheeple27" parent="Obstacles/Sheeple/SheepleGroup" unique_id=951064449 instance=ExtResource("5_kek77")]
+[node name="Sheeple27" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -8.10277, 0.3, -3.3938599)
 
-[node name="Sheeple28" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1142552616 instance=ExtResource("5_kek77")]
+[node name="Sheeple28" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.137842, 0.3, -3.0530853)
 
-[node name="Sheeple29" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1581484189 instance=ExtResource("5_kek77")]
+[node name="Sheeple29" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.114725, 0.3, -2.1154633)
 
-[node name="Sheeple30" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1752331837 instance=ExtResource("5_kek77")]
+[node name="Sheeple30" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -1.1704082, 0.3, 0.34342957)
 
-[node name="Sheeple31" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1347288659 instance=ExtResource("5_kek77")]
+[node name="Sheeple31" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 0.9513769, 0.3, 2.7905426)
 
-[node name="Sheeple32" parent="Obstacles/Sheeple/SheepleGroup" unique_id=223350395 instance=ExtResource("5_kek77")]
+[node name="Sheeple32" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.7762003, 0.3, 5.857559)
 
-[node name="Sheeple33" parent="Obstacles/Sheeple/SheepleGroup" unique_id=604334156 instance=ExtResource("5_kek77")]
+[node name="Sheeple33" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.28794, 0.3, 8.522659)
 
-[node name="Sheeple34" parent="Obstacles/Sheeple/SheepleGroup" unique_id=779730806 instance=ExtResource("5_kek77")]
+[node name="Sheeple34" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 4.8370132, 0.3, 4.943527)
 
-[node name="Sheeple35" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1305707163 instance=ExtResource("5_kek77")]
+[node name="Sheeple35" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.8172998, 0.3, 1.6217041)
 
-[node name="Sheeple36" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1547867082 instance=ExtResource("5_kek77")]
+[node name="Sheeple36" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 2.2996492, 0.3, -1.1326294)
 
-[node name="Sheeple37" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1348091057 instance=ExtResource("5_kek77")]
+[node name="Sheeple37" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.212164, 0.3, -1.5911102)
 
-[node name="Sheeple38" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1816297798 instance=ExtResource("5_kek77")]
+[node name="Sheeple38" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.802653, 0.3, -0.15562439)
 
-[node name="Sheeple39" parent="Obstacles/Sheeple/SheepleGroup" unique_id=398669732 instance=ExtResource("5_kek77")]
+[node name="Sheeple39" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.8688645, 0.3, 3.5855255)
 
-[node name="Sheeple40" parent="Obstacles/Sheeple/SheepleGroup" unique_id=440999621 instance=ExtResource("5_kek77")]
+[node name="Sheeple40" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.06823444, 0.3, -4.032364)
 
-[node name="Sheeple64" parent="Obstacles/Sheeple/SheepleGroup" unique_id=64262688 instance=ExtResource("5_kek77")]
+[node name="Sheeple64" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.549757, 0.3, -6.225342)
 
-[node name="Sheeple65" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1537562566 instance=ExtResource("5_kek77")]
+[node name="Sheeple65" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.4703083, 0.3, -8.9960785)
 
-[node name="Sheeple66" parent="Obstacles/Sheeple/SheepleGroup" unique_id=564853276 instance=ExtResource("5_kek77")]
+[node name="Sheeple66" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.36747646, 0.3, -9.541107)
 
-[node name="Sheeple67" parent="Obstacles/Sheeple/SheepleGroup" unique_id=577655254 instance=ExtResource("5_kek77")]
+[node name="Sheeple67" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 2.0613241, 0.3, -8.004593)
 
-[node name="Sheeple68" parent="Obstacles/Sheeple/SheepleGroup" unique_id=9211225 instance=ExtResource("5_kek77")]
+[node name="Sheeple68" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 4.5971956, 0.3, -6.9536896)
 
-[node name="Sheeple69" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1079169704 instance=ExtResource("5_kek77")]
+[node name="Sheeple69" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.016548, 0.3, -5.620865)
 
-[node name="Sheeple70" parent="Obstacles/Sheeple/SheepleGroup" unique_id=846550309 instance=ExtResource("5_kek77")]
+[node name="Sheeple70" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 9.696753, 0.3, -4.1881714)
 
-[node name="Sheeple71" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1490149365 instance=ExtResource("5_kek77")]
+[node name="Sheeple71" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.894464, 0.3, -2.5863495)
 
-[node name="Sheeple72" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1470363823 instance=ExtResource("5_kek77")]
+[node name="Sheeple72" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.683415, 0.3, -0.40168762)
 
-[node name="Sheeple73" parent="Obstacles/Sheeple/SheepleGroup" unique_id=880078229 instance=ExtResource("5_kek77")]
+[node name="Sheeple73" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.347869, 0.3, 3.0764923)
 
-[node name="Sheeple74" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1827347274 instance=ExtResource("5_kek77")]
+[node name="Sheeple74" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 13.583449, 0.3, 7.523163)
 
-[node name="Sheeple75" parent="Obstacles/Sheeple/SheepleGroup" unique_id=375923157 instance=ExtResource("5_kek77")]
+[node name="Sheeple75" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 16.353458, 0.3, 5.5717316)
 
-[node name="Sheeple76" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1968810401 instance=ExtResource("5_kek77")]
+[node name="Sheeple76" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.203411, 0.3, 1.4734192)
 
-[node name="Sheeple77" parent="Obstacles/Sheeple/SheepleGroup" unique_id=686329890 instance=ExtResource("5_kek77")]
+[node name="Sheeple77" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.187775, 0.3, -3.2830505)
 
-[node name="Sheeple78" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1720834666 instance=ExtResource("5_kek77")]
+[node name="Sheeple78" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.364886, 0.3, -5.1060944)
 
-[node name="Sheeple79" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1278506757 instance=ExtResource("5_kek77")]
+[node name="Sheeple79" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.364886, 0.3, -7.1060944)
 
-[node name="Sheeple80" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1679193776 instance=ExtResource("5_kek77")]
+[node name="Sheeple80" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 9.350682, 0.3, -9.020676)
 
-[node name="Sheeple81" parent="Obstacles/Sheeple/SheepleGroup" unique_id=794083044 instance=ExtResource("5_kek77")]
+[node name="Sheeple81" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 13.132628, 0.3, -9.970703)
 
-[node name="Sheeple82" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1465182254 instance=ExtResource("5_kek77")]
+[node name="Sheeple82" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 15.809279, 0.3, -8.420654)
 
-[node name="Sheeple83" parent="Obstacles/Sheeple/SheepleGroup" unique_id=196672949 instance=ExtResource("5_kek77")]
+[node name="Sheeple83" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 6.1606684, 0.3, -10.005554)
 
-[node name="Sheeple84" parent="Obstacles/Sheeple/SheepleGroup" unique_id=191295146 instance=ExtResource("5_kek77")]
+[node name="Sheeple84" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 8.619718, 0.3, -12.177383)
 
-[node name="Sheeple85" parent="Obstacles/Sheeple/SheepleGroup" unique_id=128837482 instance=ExtResource("5_kek77")]
+[node name="Sheeple85" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.6477528, 0.3, -11.654129)
 
-[node name="Sheeple86" parent="Obstacles/Sheeple/SheepleGroup" unique_id=327745543 instance=ExtResource("5_kek77")]
+[node name="Sheeple86" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.1909351, 0.3, -12.816055)
 
-[node name="Sheeple87" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1681958354 instance=ExtResource("5_kek77")]
+[node name="Sheeple87" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.2738285, 0.3, -12.536972)
 
-[node name="Sheeple88" parent="Obstacles/Sheeple/SheepleGroup" unique_id=641432364 instance=ExtResource("5_kek77")]
+[node name="Sheeple88" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -6.0364857, 0.3, -11.679657)
 
-[node name="Sheeple89" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1328557771 instance=ExtResource("5_kek77")]
+[node name="Sheeple89" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -9.024828, 0.3, -11.386536)
 
-[node name="Sheeple90" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1797184908 instance=ExtResource("5_kek77")]
+[node name="Sheeple90" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.078447, 0.3, -10.999619)
 
-[node name="Sheeple91" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1646130072 instance=ExtResource("5_kek77")]
+[node name="Sheeple91" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -24.223272, 0.3, 1.7145233)
 
-[node name="Sheeple92" parent="Obstacles/Sheeple/SheepleGroup" unique_id=925394063 instance=ExtResource("5_kek77")]
+[node name="Sheeple92" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.22552, 0.3, 1.9679108)
 
-[node name="Sheeple93" parent="Obstacles/Sheeple/SheepleGroup" unique_id=925196630 instance=ExtResource("5_kek77")]
+[node name="Sheeple93" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -20.259562, 0.3, 3.9942322)
 
-[node name="Sheeple94" parent="Obstacles/Sheeple/SheepleGroup" unique_id=681049705 instance=ExtResource("5_kek77")]
+[node name="Sheeple94" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -18.223211, 0.3, 6.3804626)
 
-[node name="Sheeple95" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1288249801 instance=ExtResource("5_kek77")]
+[node name="Sheeple95" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -16.829466, 0.3, 8.63652)
 
-[node name="Sheeple96" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1385320201 instance=ExtResource("5_kek77")]
+[node name="Sheeple96" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.89826, 0.3, 11.043777)
 
-[node name="Sheeple97" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1012566820 instance=ExtResource("5_kek77")]
+[node name="Sheeple97" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.518904, 0.3, 13.775818)
 
-[node name="Sheeple98" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1407737332 instance=ExtResource("5_kek77")]
+[node name="Sheeple98" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -12.749704, 0.3, 16.742508)
 
-[node name="Sheeple99" parent="Obstacles/Sheeple/SheepleGroup" unique_id=937061254 instance=ExtResource("5_kek77")]
+[node name="Sheeple99" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.745138, 0.3, 19.378845)
 
-[node name="Sheeple100" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1676746447 instance=ExtResource("5_kek77")]
+[node name="Sheeple100" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.6180563, 0.3, 17.857086)
 
-[node name="Sheeple101" parent="Obstacles/Sheeple/SheepleGroup" unique_id=281105471 instance=ExtResource("5_kek77")]
+[node name="Sheeple101" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.1656876, 0.3, 16.257813)
 
-[node name="Sheeple102" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1086384305 instance=ExtResource("5_kek77")]
+[node name="Sheeple102" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.52464, 0.3, -13.676834)
 
-[node name="Sheeple103" parent="Obstacles/Sheeple/SheepleGroup" unique_id=883257875 instance=ExtResource("5_kek77")]
+[node name="Sheeple103" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 15.352626, 0.3, -13.550476)
 
-[node name="Sheeple104" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1173639591 instance=ExtResource("5_kek77")]
+[node name="Sheeple104" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.63768, 0.3, -11.602402)
 
-[node name="Sheeple105" parent="Obstacles/Sheeple/SheepleGroup" unique_id=874558678 instance=ExtResource("5_kek77")]
+[node name="Sheeple105" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 19.143787, 0.3, -9.39798)
 
-[node name="Sheeple106" parent="Obstacles/Sheeple/SheepleGroup" unique_id=902738628 instance=ExtResource("5_kek77")]
+[node name="Sheeple106" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 20.007092, 0.3, -6.2611694)
 
-[node name="Sheeple107" parent="Obstacles/Sheeple/SheepleGroup" unique_id=101693439 instance=ExtResource("5_kek77")]
+[node name="Sheeple107" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.9890623, 0.3, -15.050491)
 
-[node name="Sheeple108" parent="Obstacles/Sheeple/SheepleGroup" unique_id=637618076 instance=ExtResource("5_kek77")]
+[node name="Sheeple108" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.834981, 0.3, -16.281174)
 
-[node name="Sheeple109" parent="Obstacles/Sheeple/SheepleGroup" unique_id=41710302 instance=ExtResource("5_kek77")]
+[node name="Sheeple109" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.999609, 0.3, -15.877213)
 
-[node name="Sheeple110" parent="Obstacles/Sheeple/SheepleGroup" unique_id=2139891737 instance=ExtResource("5_kek77")]
+[node name="Sheeple110" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.268732, 0.3, -16.184052)
 
-[node name="Sheeple111" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1039765466 instance=ExtResource("5_kek77")]
+[node name="Sheeple111" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.831728, 0.3, -16.202179)
 
-[node name="Sheeple112" parent="Obstacles/Sheeple/SheepleGroup" unique_id=504275542 instance=ExtResource("5_kek77")]
+[node name="Sheeple112" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.523737, 0.3, -14.110321)
 
-[node name="Sheeple113" parent="Obstacles/Sheeple/SheepleGroup" unique_id=2135652743 instance=ExtResource("5_kek77")]
+[node name="Sheeple113" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.4117565, 0.3, -14.403275)
 
-[node name="Sheeple114" parent="Obstacles/Sheeple/SheepleGroup" unique_id=877402107 instance=ExtResource("5_kek77")]
+[node name="Sheeple114" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -16.365595, 0.3, -15.986954)
 
-[node name="Sheeple115" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1316844115 instance=ExtResource("5_kek77")]
+[node name="Sheeple115" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -18.851316, 0.3, -13.300369)
 
-[node name="Sheeple116" parent="Obstacles/Sheeple/SheepleGroup" unique_id=80078806 instance=ExtResource("5_kek77")]
+[node name="Sheeple116" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.51274, 0.3, -11.360352)
 
-[node name="Sheeple117" parent="Obstacles/Sheeple/SheepleGroup" unique_id=1259257763 instance=ExtResource("5_kek77")]
+[node name="Sheeple117" parent="Obstacles/Sheeple/SheepleGroup" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.51274, 0.3, -11.360352)
 
-[node name="SheepleGroup2" type="Node3D" parent="Obstacles/Sheeple" unique_id=563669459]
+[node name="SheepleGroup2" type="Node3D" parent="Obstacles/Sheeple"]
 transform = Transform3D(0.15652066, 0, -0.98767465, 0, 1, 0, 0.98767465, 0, 0.15652066, 6.5413055, 0.3, -182.0696)
 
-[node name="Sheeple" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=648822625 instance=ExtResource("5_kek77")]
+[node name="Sheeple" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.17581, 0.3, 14.243515)
 
-[node name="Sheeple2" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=456131572 instance=ExtResource("5_kek77")]
+[node name="Sheeple2" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.4906445, 0.3, 15.470352)
 
-[node name="Sheeple3" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=2146626251 instance=ExtResource("5_kek77")]
+[node name="Sheeple3" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.505899, 0.3, 12.993378)
 
-[node name="Sheeple4" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1781133728 instance=ExtResource("5_kek77")]
+[node name="Sheeple4" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -6.953493, 0.3, 11.423126)
 
-[node name="Sheeple5" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=2096964192 instance=ExtResource("5_kek77")]
+[node name="Sheeple5" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.1929836, 0.3, 14.095184)
 
-[node name="Sheeple6" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=260458264 instance=ExtResource("5_kek77")]
+[node name="Sheeple6" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -9.8640995, 0.3, 10.543991)
 
-[node name="Sheeple7" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=485702940 instance=ExtResource("5_kek77")]
+[node name="Sheeple7" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.334154, 0.3, 7.45401)
 
-[node name="Sheeple8" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=41545900 instance=ExtResource("5_kek77")]
+[node name="Sheeple8" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.1323338, 0.3, 7.3332977)
 
-[node name="Sheeple9" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1124576034 instance=ExtResource("5_kek77")]
+[node name="Sheeple9" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.4399204, 0.3, 7.6026306)
 
-[node name="Sheeple10" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=832841002 instance=ExtResource("5_kek77")]
+[node name="Sheeple10" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.933836, 0.3, 10.178848)
 
-[node name="Sheeple11" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1010899572 instance=ExtResource("5_kek77")]
+[node name="Sheeple11" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.2239094, 0.3, 4.574997)
 
-[node name="Sheeple12" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1314154019 instance=ExtResource("5_kek77")]
+[node name="Sheeple12" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.804121, 0.3, 4.0726776)
 
-[node name="Sheeple13" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=331250760 instance=ExtResource("5_kek77")]
+[node name="Sheeple13" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.937689, 0.3, 6.887726)
 
-[node name="Sheeple14" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=2128402061 instance=ExtResource("5_kek77")]
+[node name="Sheeple14" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.615942, 0.3, 10.433289)
 
-[node name="Sheeple15" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1430734042 instance=ExtResource("5_kek77")]
+[node name="Sheeple15" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.217089, 0.3, 13.795227)
 
-[node name="Sheeple16" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=850663679 instance=ExtResource("5_kek77")]
+[node name="Sheeple16" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.818781, 0.3, 17.739044)
 
-[node name="Sheeple17" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=475256047 instance=ExtResource("5_kek77")]
+[node name="Sheeple17" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.908373, 0.3, 18.618027)
 
-[node name="Sheeple18" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=843424796 instance=ExtResource("5_kek77")]
+[node name="Sheeple18" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.1498165, 0.3, 17.771194)
 
-[node name="Sheeple19" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=389006778 instance=ExtResource("5_kek77")]
+[node name="Sheeple19" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.70179176, 0.3, 14.312119)
 
-[node name="Sheeple20" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=357559305 instance=ExtResource("5_kek77")]
+[node name="Sheeple20" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 0.20818806, 0.3, 10.507828)
 
-[node name="Sheeple21" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=944969620 instance=ExtResource("5_kek77")]
+[node name="Sheeple21" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -1.2555218, 0.3, 7.2155)
 
-[node name="Sheeple22" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=552237977 instance=ExtResource("5_kek77")]
+[node name="Sheeple22" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.0570278, 0.3, 4.2126007)
 
-[node name="Sheeple23" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1117271164 instance=ExtResource("5_kek77")]
+[node name="Sheeple23" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.196333, 0.3, 1.4991608)
 
-[node name="Sheeple24" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=566914346 instance=ExtResource("5_kek77")]
+[node name="Sheeple24" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -8.699636, 0.3, 1.1045532)
 
-[node name="Sheeple25" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1385165701 instance=ExtResource("5_kek77")]
+[node name="Sheeple25" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.645544, 0.3, -0.30763245)
 
-[node name="Sheeple26" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1781841867 instance=ExtResource("5_kek77")]
+[node name="Sheeple26" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.9847355, 0.3, -4.1204834)
 
-[node name="Sheeple27" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=494637473 instance=ExtResource("5_kek77")]
+[node name="Sheeple27" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -8.10277, 0.3, -3.3938599)
 
-[node name="Sheeple28" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1901687162 instance=ExtResource("5_kek77")]
+[node name="Sheeple28" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.137842, 0.3, -3.0530853)
 
-[node name="Sheeple29" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=720957240 instance=ExtResource("5_kek77")]
+[node name="Sheeple29" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.114725, 0.3, -2.1154633)
 
-[node name="Sheeple30" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=38994211 instance=ExtResource("5_kek77")]
+[node name="Sheeple30" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -1.1704082, 0.3, 0.34342957)
 
-[node name="Sheeple31" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=320894185 instance=ExtResource("5_kek77")]
+[node name="Sheeple31" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 0.9513769, 0.3, 2.7905426)
 
-[node name="Sheeple32" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1697226995 instance=ExtResource("5_kek77")]
+[node name="Sheeple32" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.7762003, 0.3, 5.857559)
 
-[node name="Sheeple33" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=129025849 instance=ExtResource("5_kek77")]
+[node name="Sheeple33" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.28794, 0.3, 8.522659)
 
-[node name="Sheeple34" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=905633646 instance=ExtResource("5_kek77")]
+[node name="Sheeple34" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 4.8370132, 0.3, 4.943527)
 
-[node name="Sheeple35" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=807984236 instance=ExtResource("5_kek77")]
+[node name="Sheeple35" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.8172998, 0.3, 1.6217041)
 
-[node name="Sheeple36" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1992823938 instance=ExtResource("5_kek77")]
+[node name="Sheeple36" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 2.2996492, 0.3, -1.1326294)
 
-[node name="Sheeple37" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=486633214 instance=ExtResource("5_kek77")]
+[node name="Sheeple37" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.212164, 0.3, -1.5911102)
 
-[node name="Sheeple38" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=646489580 instance=ExtResource("5_kek77")]
+[node name="Sheeple38" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.802653, 0.3, -0.15562439)
 
-[node name="Sheeple39" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=2082516272 instance=ExtResource("5_kek77")]
+[node name="Sheeple39" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.8688645, 0.3, 3.5855255)
 
-[node name="Sheeple40" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1471504008 instance=ExtResource("5_kek77")]
+[node name="Sheeple40" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.06823444, 0.3, -4.032364)
 
-[node name="Sheeple64" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1048796850 instance=ExtResource("5_kek77")]
+[node name="Sheeple64" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.549757, 0.3, -6.225342)
 
-[node name="Sheeple65" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1655925256 instance=ExtResource("5_kek77")]
+[node name="Sheeple65" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.4703083, 0.3, -8.9960785)
 
-[node name="Sheeple66" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1708342202 instance=ExtResource("5_kek77")]
+[node name="Sheeple66" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.36747646, 0.3, -9.541107)
 
-[node name="Sheeple67" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=168481198 instance=ExtResource("5_kek77")]
+[node name="Sheeple67" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 2.0613241, 0.3, -8.004593)
 
-[node name="Sheeple68" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1148811824 instance=ExtResource("5_kek77")]
+[node name="Sheeple68" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 4.5971956, 0.3, -6.9536896)
 
-[node name="Sheeple69" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=243816106 instance=ExtResource("5_kek77")]
+[node name="Sheeple69" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.016548, 0.3, -5.620865)
 
-[node name="Sheeple70" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=981811744 instance=ExtResource("5_kek77")]
+[node name="Sheeple70" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 9.696753, 0.3, -4.1881714)
 
-[node name="Sheeple71" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1424394239 instance=ExtResource("5_kek77")]
+[node name="Sheeple71" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.894464, 0.3, -2.5863495)
 
-[node name="Sheeple72" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=2089679959 instance=ExtResource("5_kek77")]
+[node name="Sheeple72" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.683415, 0.3, -0.40168762)
 
-[node name="Sheeple73" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1073143023 instance=ExtResource("5_kek77")]
+[node name="Sheeple73" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.347869, 0.3, 3.0764923)
 
-[node name="Sheeple74" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1082767946 instance=ExtResource("5_kek77")]
+[node name="Sheeple74" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 13.583449, 0.3, 7.523163)
 
-[node name="Sheeple75" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=2054288692 instance=ExtResource("5_kek77")]
+[node name="Sheeple75" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 16.353458, 0.3, 5.5717316)
 
-[node name="Sheeple76" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=157164551 instance=ExtResource("5_kek77")]
+[node name="Sheeple76" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.203411, 0.3, 1.4734192)
 
-[node name="Sheeple77" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=2034450023 instance=ExtResource("5_kek77")]
+[node name="Sheeple77" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.187775, 0.3, -3.2830505)
 
-[node name="Sheeple78" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1089377876 instance=ExtResource("5_kek77")]
+[node name="Sheeple78" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.364886, 0.3, -5.1060944)
 
-[node name="Sheeple79" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1577833834 instance=ExtResource("5_kek77")]
+[node name="Sheeple79" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.364886, 0.3, -7.1060944)
 
-[node name="Sheeple80" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=2027601398 instance=ExtResource("5_kek77")]
+[node name="Sheeple80" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 9.350682, 0.3, -9.020676)
 
-[node name="Sheeple81" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=155283950 instance=ExtResource("5_kek77")]
+[node name="Sheeple81" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 13.132628, 0.3, -9.970703)
 
-[node name="Sheeple82" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=234444925 instance=ExtResource("5_kek77")]
+[node name="Sheeple82" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 15.809279, 0.3, -8.420654)
 
-[node name="Sheeple83" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1649470304 instance=ExtResource("5_kek77")]
+[node name="Sheeple83" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 6.1606684, 0.3, -10.005554)
 
-[node name="Sheeple84" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=572183337 instance=ExtResource("5_kek77")]
+[node name="Sheeple84" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 8.619718, 0.3, -12.177383)
 
-[node name="Sheeple85" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1417187621 instance=ExtResource("5_kek77")]
+[node name="Sheeple85" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.6477528, 0.3, -11.654129)
 
-[node name="Sheeple86" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1178322265 instance=ExtResource("5_kek77")]
+[node name="Sheeple86" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.1909351, 0.3, -12.816055)
 
-[node name="Sheeple87" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1557656925 instance=ExtResource("5_kek77")]
+[node name="Sheeple87" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.2738285, 0.3, -12.536972)
 
-[node name="Sheeple88" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=784737008 instance=ExtResource("5_kek77")]
+[node name="Sheeple88" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -6.0364857, 0.3, -11.679657)
 
-[node name="Sheeple89" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1863773757 instance=ExtResource("5_kek77")]
+[node name="Sheeple89" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -9.024828, 0.3, -11.386536)
 
-[node name="Sheeple90" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1851663377 instance=ExtResource("5_kek77")]
+[node name="Sheeple90" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.078447, 0.3, -10.999619)
 
-[node name="Sheeple91" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=900005634 instance=ExtResource("5_kek77")]
+[node name="Sheeple91" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -24.223272, 0.3, 1.7145233)
 
-[node name="Sheeple92" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1597148966 instance=ExtResource("5_kek77")]
+[node name="Sheeple92" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.22552, 0.3, 1.9679108)
 
-[node name="Sheeple93" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1038019530 instance=ExtResource("5_kek77")]
+[node name="Sheeple93" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -20.259562, 0.3, 3.9942322)
 
-[node name="Sheeple94" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=646215108 instance=ExtResource("5_kek77")]
+[node name="Sheeple94" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -18.223211, 0.3, 6.3804626)
 
-[node name="Sheeple95" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=862895730 instance=ExtResource("5_kek77")]
+[node name="Sheeple95" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -16.829466, 0.3, 8.63652)
 
-[node name="Sheeple96" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=78971095 instance=ExtResource("5_kek77")]
+[node name="Sheeple96" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.89826, 0.3, 11.043777)
 
-[node name="Sheeple97" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1816220430 instance=ExtResource("5_kek77")]
+[node name="Sheeple97" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.518904, 0.3, 13.775818)
 
-[node name="Sheeple98" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=138902075 instance=ExtResource("5_kek77")]
+[node name="Sheeple98" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -12.749704, 0.3, 16.742508)
 
-[node name="Sheeple99" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=175214470 instance=ExtResource("5_kek77")]
+[node name="Sheeple99" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.745138, 0.3, 19.378845)
 
-[node name="Sheeple100" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1335906177 instance=ExtResource("5_kek77")]
+[node name="Sheeple100" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.6180563, 0.3, 17.857086)
 
-[node name="Sheeple101" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1583471148 instance=ExtResource("5_kek77")]
+[node name="Sheeple101" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.1656876, 0.3, 16.257813)
 
-[node name="Sheeple102" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=415738953 instance=ExtResource("5_kek77")]
+[node name="Sheeple102" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.52464, 0.3, -13.676834)
 
-[node name="Sheeple103" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1698720242 instance=ExtResource("5_kek77")]
+[node name="Sheeple103" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 15.352626, 0.3, -13.550476)
 
-[node name="Sheeple104" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=815724647 instance=ExtResource("5_kek77")]
+[node name="Sheeple104" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.63768, 0.3, -11.602402)
 
-[node name="Sheeple105" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=538068829 instance=ExtResource("5_kek77")]
+[node name="Sheeple105" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 19.143787, 0.3, -9.39798)
 
-[node name="Sheeple106" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=198694993 instance=ExtResource("5_kek77")]
+[node name="Sheeple106" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 20.007092, 0.3, -6.2611694)
 
-[node name="Sheeple107" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=131742221 instance=ExtResource("5_kek77")]
+[node name="Sheeple107" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.9890623, 0.3, -15.050491)
 
-[node name="Sheeple108" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=295106152 instance=ExtResource("5_kek77")]
+[node name="Sheeple108" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.834981, 0.3, -16.281174)
 
-[node name="Sheeple109" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=730131873 instance=ExtResource("5_kek77")]
+[node name="Sheeple109" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.999609, 0.3, -15.877213)
 
-[node name="Sheeple110" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1786342482 instance=ExtResource("5_kek77")]
+[node name="Sheeple110" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.268732, 0.3, -16.184052)
 
-[node name="Sheeple111" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1567298618 instance=ExtResource("5_kek77")]
+[node name="Sheeple111" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.831728, 0.3, -16.202179)
 
-[node name="Sheeple112" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=311194554 instance=ExtResource("5_kek77")]
+[node name="Sheeple112" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.523737, 0.3, -14.110321)
 
-[node name="Sheeple113" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1249695303 instance=ExtResource("5_kek77")]
+[node name="Sheeple113" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.4117565, 0.3, -14.403275)
 
-[node name="Sheeple114" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=2001701396 instance=ExtResource("5_kek77")]
+[node name="Sheeple114" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -16.365595, 0.3, -15.986954)
 
-[node name="Sheeple115" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=821072256 instance=ExtResource("5_kek77")]
+[node name="Sheeple115" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -18.851316, 0.3, -13.300369)
 
-[node name="Sheeple116" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1478493108 instance=ExtResource("5_kek77")]
+[node name="Sheeple116" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.51274, 0.3, -11.360352)
 
-[node name="Sheeple117" parent="Obstacles/Sheeple/SheepleGroup2" unique_id=1918135877 instance=ExtResource("5_kek77")]
+[node name="Sheeple117" parent="Obstacles/Sheeple/SheepleGroup2" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.51274, 0.3, -11.360352)
 
-[node name="SheepleGroup3" type="Node3D" parent="Obstacles/Sheeple" unique_id=1808615239]
+[node name="SheepleGroup3" type="Node3D" parent="Obstacles/Sheeple"]
 transform = Transform3D(0.15652066, 0, -0.98767465, 0, 1, 0, 0.98767465, 0, 0.15652066, 25.397774, 0.3, -181.59976)
 
-[node name="Sheeple" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1588317112 instance=ExtResource("5_kek77")]
+[node name="Sheeple" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.17581, 0.3, 14.243515)
 
-[node name="Sheeple2" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1981807032 instance=ExtResource("5_kek77")]
+[node name="Sheeple2" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.4906445, 0.3, 15.470352)
 
-[node name="Sheeple3" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1788099700 instance=ExtResource("5_kek77")]
+[node name="Sheeple3" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.505899, 0.3, 12.993378)
 
-[node name="Sheeple4" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=176431016 instance=ExtResource("5_kek77")]
+[node name="Sheeple4" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -6.953493, 0.3, 11.423126)
 
-[node name="Sheeple5" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=256766705 instance=ExtResource("5_kek77")]
+[node name="Sheeple5" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.1929836, 0.3, 14.095184)
 
-[node name="Sheeple6" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1912872442 instance=ExtResource("5_kek77")]
+[node name="Sheeple6" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -9.8640995, 0.3, 10.543991)
 
-[node name="Sheeple7" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=232690408 instance=ExtResource("5_kek77")]
+[node name="Sheeple7" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.334154, 0.3, 7.45401)
 
-[node name="Sheeple8" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=2046367901 instance=ExtResource("5_kek77")]
+[node name="Sheeple8" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.1323338, 0.3, 7.3332977)
 
-[node name="Sheeple9" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1014414381 instance=ExtResource("5_kek77")]
+[node name="Sheeple9" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.4399204, 0.3, 7.6026306)
 
-[node name="Sheeple10" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1312291350 instance=ExtResource("5_kek77")]
+[node name="Sheeple10" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.933836, 0.3, 10.178848)
 
-[node name="Sheeple11" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=897253499 instance=ExtResource("5_kek77")]
+[node name="Sheeple11" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.2239094, 0.3, 4.574997)
 
-[node name="Sheeple12" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=580130181 instance=ExtResource("5_kek77")]
+[node name="Sheeple12" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.804121, 0.3, 4.0726776)
 
-[node name="Sheeple13" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1267769333 instance=ExtResource("5_kek77")]
+[node name="Sheeple13" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.937689, 0.3, 6.887726)
 
-[node name="Sheeple14" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1128241281 instance=ExtResource("5_kek77")]
+[node name="Sheeple14" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.615942, 0.3, 10.433289)
 
-[node name="Sheeple15" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=550900940 instance=ExtResource("5_kek77")]
+[node name="Sheeple15" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.217089, 0.3, 13.795227)
 
-[node name="Sheeple16" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=271965904 instance=ExtResource("5_kek77")]
+[node name="Sheeple16" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.818781, 0.3, 17.739044)
 
-[node name="Sheeple17" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=737926164 instance=ExtResource("5_kek77")]
+[node name="Sheeple17" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.908373, 0.3, 18.618027)
 
-[node name="Sheeple18" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=572666183 instance=ExtResource("5_kek77")]
+[node name="Sheeple18" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.1498165, 0.3, 17.771194)
 
-[node name="Sheeple19" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1182633476 instance=ExtResource("5_kek77")]
+[node name="Sheeple19" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.70179176, 0.3, 14.312119)
 
-[node name="Sheeple20" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=917378535 instance=ExtResource("5_kek77")]
+[node name="Sheeple20" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 0.20818806, 0.3, 10.507828)
 
-[node name="Sheeple21" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=2100927 instance=ExtResource("5_kek77")]
+[node name="Sheeple21" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -1.2555218, 0.3, 7.2155)
 
-[node name="Sheeple22" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=309262557 instance=ExtResource("5_kek77")]
+[node name="Sheeple22" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.0570278, 0.3, 4.2126007)
 
-[node name="Sheeple23" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=692019995 instance=ExtResource("5_kek77")]
+[node name="Sheeple23" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.196333, 0.3, 1.4991608)
 
-[node name="Sheeple24" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1473835908 instance=ExtResource("5_kek77")]
+[node name="Sheeple24" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -8.699636, 0.3, 1.1045532)
 
-[node name="Sheeple25" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=828582555 instance=ExtResource("5_kek77")]
+[node name="Sheeple25" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.645544, 0.3, -0.30763245)
 
-[node name="Sheeple26" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=458679196 instance=ExtResource("5_kek77")]
+[node name="Sheeple26" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.9847355, 0.3, -4.1204834)
 
-[node name="Sheeple27" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1648270063 instance=ExtResource("5_kek77")]
+[node name="Sheeple27" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -8.10277, 0.3, -3.3938599)
 
-[node name="Sheeple28" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1987396484 instance=ExtResource("5_kek77")]
+[node name="Sheeple28" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.137842, 0.3, -3.0530853)
 
-[node name="Sheeple29" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=60186157 instance=ExtResource("5_kek77")]
+[node name="Sheeple29" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.114725, 0.3, -2.1154633)
 
-[node name="Sheeple30" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1621374257 instance=ExtResource("5_kek77")]
+[node name="Sheeple30" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -1.1704082, 0.3, 0.34342957)
 
-[node name="Sheeple31" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=569068407 instance=ExtResource("5_kek77")]
+[node name="Sheeple31" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 0.9513769, 0.3, 2.7905426)
 
-[node name="Sheeple32" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1288776277 instance=ExtResource("5_kek77")]
+[node name="Sheeple32" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.7762003, 0.3, 5.857559)
 
-[node name="Sheeple33" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=187921431 instance=ExtResource("5_kek77")]
+[node name="Sheeple33" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.28794, 0.3, 8.522659)
 
-[node name="Sheeple34" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=138379798 instance=ExtResource("5_kek77")]
+[node name="Sheeple34" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 4.8370132, 0.3, 4.943527)
 
-[node name="Sheeple35" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1416824433 instance=ExtResource("5_kek77")]
+[node name="Sheeple35" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.8172998, 0.3, 1.6217041)
 
-[node name="Sheeple36" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1254818829 instance=ExtResource("5_kek77")]
+[node name="Sheeple36" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 2.2996492, 0.3, -1.1326294)
 
-[node name="Sheeple37" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1064746457 instance=ExtResource("5_kek77")]
+[node name="Sheeple37" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.212164, 0.3, -1.5911102)
 
-[node name="Sheeple38" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1088453755 instance=ExtResource("5_kek77")]
+[node name="Sheeple38" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.802653, 0.3, -0.15562439)
 
-[node name="Sheeple39" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1946180053 instance=ExtResource("5_kek77")]
+[node name="Sheeple39" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.8688645, 0.3, 3.5855255)
 
-[node name="Sheeple40" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1178721501 instance=ExtResource("5_kek77")]
+[node name="Sheeple40" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.06823444, 0.3, -4.032364)
 
-[node name="Sheeple64" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1696066637 instance=ExtResource("5_kek77")]
+[node name="Sheeple64" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.549757, 0.3, -6.225342)
 
-[node name="Sheeple65" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1537023913 instance=ExtResource("5_kek77")]
+[node name="Sheeple65" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.4703083, 0.3, -8.9960785)
 
-[node name="Sheeple66" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1228602875 instance=ExtResource("5_kek77")]
+[node name="Sheeple66" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.36747646, 0.3, -9.541107)
 
-[node name="Sheeple67" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=250080120 instance=ExtResource("5_kek77")]
+[node name="Sheeple67" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 2.0613241, 0.3, -8.004593)
 
-[node name="Sheeple68" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=383021965 instance=ExtResource("5_kek77")]
+[node name="Sheeple68" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 4.5971956, 0.3, -6.9536896)
 
-[node name="Sheeple69" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1430290228 instance=ExtResource("5_kek77")]
+[node name="Sheeple69" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.016548, 0.3, -5.620865)
 
-[node name="Sheeple70" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1441775935 instance=ExtResource("5_kek77")]
+[node name="Sheeple70" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 9.696753, 0.3, -4.1881714)
 
-[node name="Sheeple71" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1827016165 instance=ExtResource("5_kek77")]
+[node name="Sheeple71" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.894464, 0.3, -2.5863495)
 
-[node name="Sheeple72" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1370527541 instance=ExtResource("5_kek77")]
+[node name="Sheeple72" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.683415, 0.3, -0.40168762)
 
-[node name="Sheeple73" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=491799078 instance=ExtResource("5_kek77")]
+[node name="Sheeple73" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.347869, 0.3, 3.0764923)
 
-[node name="Sheeple74" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1276974013 instance=ExtResource("5_kek77")]
+[node name="Sheeple74" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 13.583449, 0.3, 7.523163)
 
-[node name="Sheeple75" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=57033381 instance=ExtResource("5_kek77")]
+[node name="Sheeple75" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 16.353458, 0.3, 5.5717316)
 
-[node name="Sheeple76" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=503267633 instance=ExtResource("5_kek77")]
+[node name="Sheeple76" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.203411, 0.3, 1.4734192)
 
-[node name="Sheeple77" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1651388960 instance=ExtResource("5_kek77")]
+[node name="Sheeple77" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.187775, 0.3, -3.2830505)
 
-[node name="Sheeple78" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=397764248 instance=ExtResource("5_kek77")]
+[node name="Sheeple78" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.364886, 0.3, -5.1060944)
 
-[node name="Sheeple79" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1135067742 instance=ExtResource("5_kek77")]
+[node name="Sheeple79" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.364886, 0.3, -7.1060944)
 
-[node name="Sheeple80" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1536099254 instance=ExtResource("5_kek77")]
+[node name="Sheeple80" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 9.350682, 0.3, -9.020676)
 
-[node name="Sheeple81" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=231578013 instance=ExtResource("5_kek77")]
+[node name="Sheeple81" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 13.132628, 0.3, -9.970703)
 
-[node name="Sheeple82" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1885537450 instance=ExtResource("5_kek77")]
+[node name="Sheeple82" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 15.809279, 0.3, -8.420654)
 
-[node name="Sheeple83" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=164399936 instance=ExtResource("5_kek77")]
+[node name="Sheeple83" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 6.1606684, 0.3, -10.005554)
 
-[node name="Sheeple84" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=540701190 instance=ExtResource("5_kek77")]
+[node name="Sheeple84" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 8.619718, 0.3, -12.177383)
 
-[node name="Sheeple85" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=785353702 instance=ExtResource("5_kek77")]
+[node name="Sheeple85" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.6477528, 0.3, -11.654129)
 
-[node name="Sheeple86" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1134244874 instance=ExtResource("5_kek77")]
+[node name="Sheeple86" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.1909351, 0.3, -12.816055)
 
-[node name="Sheeple87" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=2103136507 instance=ExtResource("5_kek77")]
+[node name="Sheeple87" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.2738285, 0.3, -12.536972)
 
-[node name="Sheeple88" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1426143838 instance=ExtResource("5_kek77")]
+[node name="Sheeple88" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -6.0364857, 0.3, -11.679657)
 
-[node name="Sheeple89" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1789858508 instance=ExtResource("5_kek77")]
+[node name="Sheeple89" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -9.024828, 0.3, -11.386536)
 
-[node name="Sheeple90" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1357348497 instance=ExtResource("5_kek77")]
+[node name="Sheeple90" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.078447, 0.3, -10.999619)
 
-[node name="Sheeple91" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1654823303 instance=ExtResource("5_kek77")]
+[node name="Sheeple91" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -24.223272, 0.3, 1.7145233)
 
-[node name="Sheeple92" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=695737375 instance=ExtResource("5_kek77")]
+[node name="Sheeple92" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.22552, 0.3, 1.9679108)
 
-[node name="Sheeple93" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1499624332 instance=ExtResource("5_kek77")]
+[node name="Sheeple93" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -20.259562, 0.3, 3.9942322)
 
-[node name="Sheeple94" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1241944728 instance=ExtResource("5_kek77")]
+[node name="Sheeple94" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -18.223211, 0.3, 6.3804626)
 
-[node name="Sheeple95" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1414758380 instance=ExtResource("5_kek77")]
+[node name="Sheeple95" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -16.829466, 0.3, 8.63652)
 
-[node name="Sheeple96" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1600192650 instance=ExtResource("5_kek77")]
+[node name="Sheeple96" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.89826, 0.3, 11.043777)
 
-[node name="Sheeple97" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=714161259 instance=ExtResource("5_kek77")]
+[node name="Sheeple97" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.518904, 0.3, 13.775818)
 
-[node name="Sheeple98" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=65530133 instance=ExtResource("5_kek77")]
+[node name="Sheeple98" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -12.749704, 0.3, 16.742508)
 
-[node name="Sheeple99" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1361705303 instance=ExtResource("5_kek77")]
+[node name="Sheeple99" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.745138, 0.3, 19.378845)
 
-[node name="Sheeple100" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1947754846 instance=ExtResource("5_kek77")]
+[node name="Sheeple100" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.6180563, 0.3, 17.857086)
 
-[node name="Sheeple101" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1161025327 instance=ExtResource("5_kek77")]
+[node name="Sheeple101" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.1656876, 0.3, 16.257813)
 
-[node name="Sheeple102" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=642208713 instance=ExtResource("5_kek77")]
+[node name="Sheeple102" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.52464, 0.3, -13.676834)
 
-[node name="Sheeple103" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=979629950 instance=ExtResource("5_kek77")]
+[node name="Sheeple103" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 15.352626, 0.3, -13.550476)
 
-[node name="Sheeple104" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=2143684626 instance=ExtResource("5_kek77")]
+[node name="Sheeple104" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.63768, 0.3, -11.602402)
 
-[node name="Sheeple105" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1459136493 instance=ExtResource("5_kek77")]
+[node name="Sheeple105" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 19.143787, 0.3, -9.39798)
 
-[node name="Sheeple106" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=586762452 instance=ExtResource("5_kek77")]
+[node name="Sheeple106" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 20.007092, 0.3, -6.2611694)
 
-[node name="Sheeple107" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1539408417 instance=ExtResource("5_kek77")]
+[node name="Sheeple107" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.9890623, 0.3, -15.050491)
 
-[node name="Sheeple108" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1637149318 instance=ExtResource("5_kek77")]
+[node name="Sheeple108" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.834981, 0.3, -16.281174)
 
-[node name="Sheeple109" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1693722259 instance=ExtResource("5_kek77")]
+[node name="Sheeple109" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.999609, 0.3, -15.877213)
 
-[node name="Sheeple110" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=580255644 instance=ExtResource("5_kek77")]
+[node name="Sheeple110" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.268732, 0.3, -16.184052)
 
-[node name="Sheeple111" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1281343417 instance=ExtResource("5_kek77")]
+[node name="Sheeple111" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.831728, 0.3, -16.202179)
 
-[node name="Sheeple112" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=314727018 instance=ExtResource("5_kek77")]
+[node name="Sheeple112" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.523737, 0.3, -14.110321)
 
-[node name="Sheeple113" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=771736696 instance=ExtResource("5_kek77")]
+[node name="Sheeple113" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.4117565, 0.3, -14.403275)
 
-[node name="Sheeple114" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1882576903 instance=ExtResource("5_kek77")]
+[node name="Sheeple114" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -16.365595, 0.3, -15.986954)
 
-[node name="Sheeple115" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=365346756 instance=ExtResource("5_kek77")]
+[node name="Sheeple115" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -18.851316, 0.3, -13.300369)
 
-[node name="Sheeple116" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=1502172723 instance=ExtResource("5_kek77")]
+[node name="Sheeple116" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.51274, 0.3, -11.360352)
 
-[node name="Sheeple117" parent="Obstacles/Sheeple/SheepleGroup3" unique_id=2126707856 instance=ExtResource("5_kek77")]
+[node name="Sheeple117" parent="Obstacles/Sheeple/SheepleGroup3" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.51274, 0.3, -11.360352)
 
-[node name="SheepleGroup4" type="Node3D" parent="Obstacles/Sheeple" unique_id=2058747990]
+[node name="SheepleGroup4" type="Node3D" parent="Obstacles/Sheeple"]
 transform = Transform3D(-0.5196235, 0, -0.8543955, 0, 1, 0, 0.8543955, 0, -0.5196235, -11.388757, 0.3, -151.71028)
 
-[node name="Sheeple" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1770285176 instance=ExtResource("5_kek77")]
+[node name="Sheeple" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.17581, 0.3, 14.243515)
 
-[node name="Sheeple2" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=574410826 instance=ExtResource("5_kek77")]
+[node name="Sheeple2" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.4906445, 0.3, 15.470352)
 
-[node name="Sheeple3" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=853875854 instance=ExtResource("5_kek77")]
+[node name="Sheeple3" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.505899, 0.3, 12.993378)
 
-[node name="Sheeple4" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=367653201 instance=ExtResource("5_kek77")]
+[node name="Sheeple4" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -6.953493, 0.3, 11.423126)
 
-[node name="Sheeple5" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1209568458 instance=ExtResource("5_kek77")]
+[node name="Sheeple5" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.1929836, 0.3, 14.095184)
 
-[node name="Sheeple6" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=223930249 instance=ExtResource("5_kek77")]
+[node name="Sheeple6" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -9.8640995, 0.3, 10.543991)
 
-[node name="Sheeple7" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=888043759 instance=ExtResource("5_kek77")]
+[node name="Sheeple7" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.334154, 0.3, 7.45401)
 
-[node name="Sheeple8" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=959487176 instance=ExtResource("5_kek77")]
+[node name="Sheeple8" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.1323338, 0.3, 7.3332977)
 
-[node name="Sheeple9" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1088870500 instance=ExtResource("5_kek77")]
+[node name="Sheeple9" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.4399204, 0.3, 7.6026306)
 
-[node name="Sheeple10" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1347592107 instance=ExtResource("5_kek77")]
+[node name="Sheeple10" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.933836, 0.3, 10.178848)
 
-[node name="Sheeple11" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=175656536 instance=ExtResource("5_kek77")]
+[node name="Sheeple11" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.2239094, 0.3, 4.574997)
 
-[node name="Sheeple12" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=430304296 instance=ExtResource("5_kek77")]
+[node name="Sheeple12" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.804121, 0.3, 4.0726776)
 
-[node name="Sheeple13" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1704834218 instance=ExtResource("5_kek77")]
+[node name="Sheeple13" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.937689, 0.3, 6.887726)
 
-[node name="Sheeple14" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=523135412 instance=ExtResource("5_kek77")]
+[node name="Sheeple14" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.615942, 0.3, 10.433289)
 
-[node name="Sheeple15" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1855268420 instance=ExtResource("5_kek77")]
+[node name="Sheeple15" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.217089, 0.3, 13.795227)
 
-[node name="Sheeple16" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1367485241 instance=ExtResource("5_kek77")]
+[node name="Sheeple16" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.818781, 0.3, 17.739044)
 
-[node name="Sheeple17" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1718563966 instance=ExtResource("5_kek77")]
+[node name="Sheeple17" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.908373, 0.3, 18.618027)
 
-[node name="Sheeple18" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1073715384 instance=ExtResource("5_kek77")]
+[node name="Sheeple18" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.1498165, 0.3, 17.771194)
 
-[node name="Sheeple19" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1208605646 instance=ExtResource("5_kek77")]
+[node name="Sheeple19" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.70179176, 0.3, 14.312119)
 
-[node name="Sheeple20" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=689203958 instance=ExtResource("5_kek77")]
+[node name="Sheeple20" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 0.20818806, 0.3, 10.507828)
 
-[node name="Sheeple21" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=260815134 instance=ExtResource("5_kek77")]
+[node name="Sheeple21" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -1.2555218, 0.3, 7.2155)
 
-[node name="Sheeple22" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=195991497 instance=ExtResource("5_kek77")]
+[node name="Sheeple22" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.0570278, 0.3, 4.2126007)
 
-[node name="Sheeple23" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=347641693 instance=ExtResource("5_kek77")]
+[node name="Sheeple23" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.196333, 0.3, 1.4991608)
 
-[node name="Sheeple24" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1266935674 instance=ExtResource("5_kek77")]
+[node name="Sheeple24" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -8.699636, 0.3, 1.1045532)
 
-[node name="Sheeple25" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1493205906 instance=ExtResource("5_kek77")]
+[node name="Sheeple25" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.645544, 0.3, -0.30763245)
 
-[node name="Sheeple26" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1608680232 instance=ExtResource("5_kek77")]
+[node name="Sheeple26" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -11.9847355, 0.3, -4.1204834)
 
-[node name="Sheeple27" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1379812044 instance=ExtResource("5_kek77")]
+[node name="Sheeple27" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -8.10277, 0.3, -3.3938599)
 
-[node name="Sheeple28" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=145140502 instance=ExtResource("5_kek77")]
+[node name="Sheeple28" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.137842, 0.3, -3.0530853)
 
-[node name="Sheeple29" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=534473111 instance=ExtResource("5_kek77")]
+[node name="Sheeple29" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -3.114725, 0.3, -2.1154633)
 
-[node name="Sheeple30" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=646078874 instance=ExtResource("5_kek77")]
+[node name="Sheeple30" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -1.1704082, 0.3, 0.34342957)
 
-[node name="Sheeple31" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1376004777 instance=ExtResource("5_kek77")]
+[node name="Sheeple31" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 0.9513769, 0.3, 2.7905426)
 
-[node name="Sheeple32" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=2145709955 instance=ExtResource("5_kek77")]
+[node name="Sheeple32" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.7762003, 0.3, 5.857559)
 
-[node name="Sheeple33" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1721338200 instance=ExtResource("5_kek77")]
+[node name="Sheeple33" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.28794, 0.3, 8.522659)
 
-[node name="Sheeple34" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=237475372 instance=ExtResource("5_kek77")]
+[node name="Sheeple34" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 4.8370132, 0.3, 4.943527)
 
-[node name="Sheeple35" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1986021379 instance=ExtResource("5_kek77")]
+[node name="Sheeple35" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.8172998, 0.3, 1.6217041)
 
-[node name="Sheeple36" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1005974207 instance=ExtResource("5_kek77")]
+[node name="Sheeple36" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 2.2996492, 0.3, -1.1326294)
 
-[node name="Sheeple37" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1346057174 instance=ExtResource("5_kek77")]
+[node name="Sheeple37" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.212164, 0.3, -1.5911102)
 
-[node name="Sheeple38" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1267942932 instance=ExtResource("5_kek77")]
+[node name="Sheeple38" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.802653, 0.3, -0.15562439)
 
-[node name="Sheeple39" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=161754901 instance=ExtResource("5_kek77")]
+[node name="Sheeple39" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.8688645, 0.3, 3.5855255)
 
-[node name="Sheeple40" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=531022642 instance=ExtResource("5_kek77")]
+[node name="Sheeple40" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.06823444, 0.3, -4.032364)
 
-[node name="Sheeple64" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=209226628 instance=ExtResource("5_kek77")]
+[node name="Sheeple64" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.549757, 0.3, -6.225342)
 
-[node name="Sheeple65" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=297223288 instance=ExtResource("5_kek77")]
+[node name="Sheeple65" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.4703083, 0.3, -8.9960785)
 
-[node name="Sheeple66" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=641023233 instance=ExtResource("5_kek77")]
+[node name="Sheeple66" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.36747646, 0.3, -9.541107)
 
-[node name="Sheeple67" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=491585992 instance=ExtResource("5_kek77")]
+[node name="Sheeple67" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 2.0613241, 0.3, -8.004593)
 
-[node name="Sheeple68" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=628729417 instance=ExtResource("5_kek77")]
+[node name="Sheeple68" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 4.5971956, 0.3, -6.9536896)
 
-[node name="Sheeple69" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=351390727 instance=ExtResource("5_kek77")]
+[node name="Sheeple69" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 7.016548, 0.3, -5.620865)
 
-[node name="Sheeple70" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1953920832 instance=ExtResource("5_kek77")]
+[node name="Sheeple70" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 9.696753, 0.3, -4.1881714)
 
-[node name="Sheeple71" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1325221251 instance=ExtResource("5_kek77")]
+[node name="Sheeple71" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.894464, 0.3, -2.5863495)
 
-[node name="Sheeple72" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1561271100 instance=ExtResource("5_kek77")]
+[node name="Sheeple72" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.683415, 0.3, -0.40168762)
 
-[node name="Sheeple73" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1371510143 instance=ExtResource("5_kek77")]
+[node name="Sheeple73" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.347869, 0.3, 3.0764923)
 
-[node name="Sheeple74" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1167779368 instance=ExtResource("5_kek77")]
+[node name="Sheeple74" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 13.583449, 0.3, 7.523163)
 
-[node name="Sheeple75" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1680346717 instance=ExtResource("5_kek77")]
+[node name="Sheeple75" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 16.353458, 0.3, 5.5717316)
 
-[node name="Sheeple76" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1340661933 instance=ExtResource("5_kek77")]
+[node name="Sheeple76" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.203411, 0.3, 1.4734192)
 
-[node name="Sheeple77" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=218509598 instance=ExtResource("5_kek77")]
+[node name="Sheeple77" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.187775, 0.3, -3.2830505)
 
-[node name="Sheeple78" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1682130096 instance=ExtResource("5_kek77")]
+[node name="Sheeple78" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 14.364886, 0.3, -5.1060944)
 
-[node name="Sheeple79" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1483546656 instance=ExtResource("5_kek77")]
+[node name="Sheeple79" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.364886, 0.3, -7.1060944)
 
-[node name="Sheeple80" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=432821168 instance=ExtResource("5_kek77")]
+[node name="Sheeple80" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 9.350682, 0.3, -9.020676)
 
-[node name="Sheeple81" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=2059696847 instance=ExtResource("5_kek77")]
+[node name="Sheeple81" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 13.132628, 0.3, -9.970703)
 
-[node name="Sheeple82" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1801878091 instance=ExtResource("5_kek77")]
+[node name="Sheeple82" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 15.809279, 0.3, -8.420654)
 
-[node name="Sheeple83" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=806944204 instance=ExtResource("5_kek77")]
+[node name="Sheeple83" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 6.1606684, 0.3, -10.005554)
 
-[node name="Sheeple84" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1594436899 instance=ExtResource("5_kek77")]
+[node name="Sheeple84" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 8.619718, 0.3, -12.177383)
 
-[node name="Sheeple85" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1040467457 instance=ExtResource("5_kek77")]
+[node name="Sheeple85" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 3.6477528, 0.3, -11.654129)
 
-[node name="Sheeple86" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=682643599 instance=ExtResource("5_kek77")]
+[node name="Sheeple86" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.1909351, 0.3, -12.816055)
 
-[node name="Sheeple87" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=797362213 instance=ExtResource("5_kek77")]
+[node name="Sheeple87" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -2.2738285, 0.3, -12.536972)
 
-[node name="Sheeple88" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=362876703 instance=ExtResource("5_kek77")]
+[node name="Sheeple88" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -6.0364857, 0.3, -11.679657)
 
-[node name="Sheeple89" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1834220417 instance=ExtResource("5_kek77")]
+[node name="Sheeple89" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -9.024828, 0.3, -11.386536)
 
-[node name="Sheeple90" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1605854557 instance=ExtResource("5_kek77")]
+[node name="Sheeple90" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.078447, 0.3, -10.999619)
 
-[node name="Sheeple91" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=889438792 instance=ExtResource("5_kek77")]
+[node name="Sheeple91" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -24.223272, 0.3, 1.7145233)
 
-[node name="Sheeple92" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=656753455 instance=ExtResource("5_kek77")]
+[node name="Sheeple92" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.22552, 0.3, 1.9679108)
 
-[node name="Sheeple93" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=473224178 instance=ExtResource("5_kek77")]
+[node name="Sheeple93" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -20.259562, 0.3, 3.9942322)
 
-[node name="Sheeple94" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=508958358 instance=ExtResource("5_kek77")]
+[node name="Sheeple94" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -18.223211, 0.3, 6.3804626)
 
-[node name="Sheeple95" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1169300401 instance=ExtResource("5_kek77")]
+[node name="Sheeple95" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -16.829466, 0.3, 8.63652)
 
-[node name="Sheeple96" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=2047817678 instance=ExtResource("5_kek77")]
+[node name="Sheeple96" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.89826, 0.3, 11.043777)
 
-[node name="Sheeple97" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1243379052 instance=ExtResource("5_kek77")]
+[node name="Sheeple97" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -15.518904, 0.3, 13.775818)
 
-[node name="Sheeple98" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=173433345 instance=ExtResource("5_kek77")]
+[node name="Sheeple98" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -12.749704, 0.3, 16.742508)
 
-[node name="Sheeple99" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1399574879 instance=ExtResource("5_kek77")]
+[node name="Sheeple99" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -5.745138, 0.3, 19.378845)
 
-[node name="Sheeple100" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=942083592 instance=ExtResource("5_kek77")]
+[node name="Sheeple100" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.6180563, 0.3, 17.857086)
 
-[node name="Sheeple101" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=725263037 instance=ExtResource("5_kek77")]
+[node name="Sheeple101" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.1656876, 0.3, 16.257813)
 
-[node name="Sheeple102" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1481639247 instance=ExtResource("5_kek77")]
+[node name="Sheeple102" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 11.52464, 0.3, -13.676834)
 
-[node name="Sheeple103" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=2028565905 instance=ExtResource("5_kek77")]
+[node name="Sheeple103" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 15.352626, 0.3, -13.550476)
 
-[node name="Sheeple104" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1836635194 instance=ExtResource("5_kek77")]
+[node name="Sheeple104" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 17.63768, 0.3, -11.602402)
 
-[node name="Sheeple105" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1324468437 instance=ExtResource("5_kek77")]
+[node name="Sheeple105" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 19.143787, 0.3, -9.39798)
 
-[node name="Sheeple106" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1268498816 instance=ExtResource("5_kek77")]
+[node name="Sheeple106" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 20.007092, 0.3, -6.2611694)
 
-[node name="Sheeple107" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=2074719799 instance=ExtResource("5_kek77")]
+[node name="Sheeple107" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 5.9890623, 0.3, -15.050491)
 
-[node name="Sheeple108" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1150425641 instance=ExtResource("5_kek77")]
+[node name="Sheeple108" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, 1.834981, 0.3, -16.281174)
 
-[node name="Sheeple109" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=304423422 instance=ExtResource("5_kek77")]
+[node name="Sheeple109" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -0.999609, 0.3, -15.877213)
 
-[node name="Sheeple110" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=998049482 instance=ExtResource("5_kek77")]
+[node name="Sheeple110" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -4.268732, 0.3, -16.184052)
 
-[node name="Sheeple111" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=2103856335 instance=ExtResource("5_kek77")]
+[node name="Sheeple111" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -7.831728, 0.3, -16.202179)
 
-[node name="Sheeple112" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=453022298 instance=ExtResource("5_kek77")]
+[node name="Sheeple112" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -10.523737, 0.3, -14.110321)
 
-[node name="Sheeple113" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1800267960 instance=ExtResource("5_kek77")]
+[node name="Sheeple113" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -13.4117565, 0.3, -14.403275)
 
-[node name="Sheeple114" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1335792695 instance=ExtResource("5_kek77")]
+[node name="Sheeple114" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -16.365595, 0.3, -15.986954)
 
-[node name="Sheeple115" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1388258841 instance=ExtResource("5_kek77")]
+[node name="Sheeple115" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -18.851316, 0.3, -13.300369)
 
-[node name="Sheeple116" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1173455499 instance=ExtResource("5_kek77")]
+[node name="Sheeple116" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.51274, 0.3, -11.360352)
 
-[node name="Sheeple117" parent="Obstacles/Sheeple/SheepleGroup4" unique_id=1134237437 instance=ExtResource("5_kek77")]
+[node name="Sheeple117" parent="Obstacles/Sheeple/SheepleGroup4" instance=ExtResource("5_kek77")]
 transform = Transform3D(0.8909035, 0, -0.45419267, 0, 1, 0, 0.45419267, 0, 0.8909035, -22.51274, 0.3, -11.360352)
 
-[node name="Sheeple" parent="Obstacles/Sheeple" unique_id=1444171009 instance=ExtResource("5_kek77")]
+[node name="Sheeple" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.910053, 0.3, -192.05339)
 
-[node name="Sheeple2" parent="Obstacles/Sheeple" unique_id=849686154 instance=ExtResource("5_kek77")]
+[node name="Sheeple2" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.775028, 0.3, -189.46324)
 
-[node name="Sheeple3" parent="Obstacles/Sheeple" unique_id=412121247 instance=ExtResource("5_kek77")]
+[node name="Sheeple3" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.809896, 0.3, -185.47108)
 
-[node name="Sheeple4" parent="Obstacles/Sheeple" unique_id=288968776 instance=ExtResource("5_kek77")]
+[node name="Sheeple4" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9846487, 0.3, -191.84999)
 
-[node name="Sheeple5" parent="Obstacles/Sheeple" unique_id=1717337683 instance=ExtResource("5_kek77")]
+[node name="Sheeple5" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2073545, 0.3, -188.42102)
 
-[node name="Sheeple6" parent="Obstacles/Sheeple" unique_id=440188800 instance=ExtResource("5_kek77")]
+[node name="Sheeple6" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17438793, 0.3, -190.91823)
 
-[node name="Sheeple7" parent="Obstacles/Sheeple" unique_id=1995398709 instance=ExtResource("5_kek77")]
+[node name="Sheeple7" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1977262, 0.3, -192.41469)
 
-[node name="Sheeple8" parent="Obstacles/Sheeple" unique_id=598048797 instance=ExtResource("5_kek77")]
+[node name="Sheeple8" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7869196, 0.3, -188.67032)
 
-[node name="Sheeple9" parent="Obstacles/Sheeple" unique_id=1079552111 instance=ExtResource("5_kek77")]
+[node name="Sheeple9" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.96712, 0.3, -152.82646)
 
-[node name="Sheeple10" parent="Obstacles/Sheeple" unique_id=1399423296 instance=ExtResource("5_kek77")]
+[node name="Sheeple10" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.98196, 0.3, -163.0331)
 
-[node name="Sheeple11" parent="Obstacles/Sheeple" unique_id=677288053 instance=ExtResource("5_kek77")]
+[node name="Sheeple11" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.447815, 0.3, -160.85185)
 
-[node name="Sheeple12" parent="Obstacles/Sheeple" unique_id=567823803 instance=ExtResource("5_kek77")]
+[node name="Sheeple12" parent="Obstacles/Sheeple" instance=ExtResource("5_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.96398, 0.3, -135.74933)
 
-[node name="DecorativeTrees" type="Node3D" parent="." unique_id=933716287]
+[node name="DecorativeTrees" type="Node3D" parent="."]
 
-[node name="GenericTree" parent="DecorativeTrees" unique_id=878504425 instance=ExtResource("6_7mycd")]
+[node name="GenericTree" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -44.004677, 0, -32.24385)
 
-[node name="GenericTree2" parent="DecorativeTrees" unique_id=205072728 instance=ExtResource("6_7mycd")]
+[node name="GenericTree2" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.63664824, 0, 0.2909966, 0, 0.7, 0, -0.2909966, 0, 0.63664824, -28.768623, 0, -27.848827)
 
-[node name="GenericTree3" parent="DecorativeTrees" unique_id=93533210 instance=ExtResource("6_7mycd")]
+[node name="GenericTree3" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.46993282, 0, -0.5188093, 0, 0.6999999, 0, 0.5188093, 0, 0.46993282, -16.462593, 0, -34.58783)
 
-[node name="GenericTree4" parent="DecorativeTrees" unique_id=476492771 instance=ExtResource("6_7mycd")]
+[node name="GenericTree4" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.46993282, 0, -0.5188093, 0, 0.6999999, 0, 0.5188093, 0, 0.46993282, -10.602608, 0, -48.944862)
 
-[node name="GenericTree5" parent="DecorativeTrees" unique_id=806121082 instance=ExtResource("6_7mycd")]
+[node name="GenericTree5" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.69857854, 0, 0.044587404, 0, 0.6999999, 0, -0.044587404, 0, 0.69857854, -6.207588, 0, -79.70993)
 
-[node name="GenericTree6" parent="DecorativeTrees" unique_id=59299768 instance=ExtResource("6_7mycd")]
+[node name="GenericTree6" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.69857854, 0, 0.044587404, 0, 0.6999999, 0, -0.044587404, 0, 0.69857854, -13.8256, 0, -94.94597)
 
-[node name="GenericTree7" parent="DecorativeTrees" unique_id=1011252705 instance=ExtResource("6_7mycd")]
+[node name="GenericTree7" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.5823407, 0, -0.38843173, 0, 0.6999999, 0, 0.38843173, 0, 0.5823407, -0.34757137, 0, -94.65297)
 
-[node name="GenericTree8" parent="DecorativeTrees" unique_id=2087905948 instance=ExtResource("6_7mycd")]
+[node name="GenericTree8" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.6300262, 0, -0.30506867, 0, 0.6999999, 0, 0.30506867, 0, 0.6300262, -11.188576, 0, -107.25199)
 
-[node name="GenericTree9" parent="DecorativeTrees" unique_id=1455449151 instance=ExtResource("6_7mycd")]
+[node name="GenericTree9" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.69807327, 0, 0.051900327, 0, 0.6999999, 0, -0.051900327, 0, 0.69807327, -1.5195379, 0, -108.716995)
 
-[node name="GenericTree10" parent="DecorativeTrees" unique_id=1830957922 instance=ExtResource("6_7mycd")]
+[node name="GenericTree10" parent="DecorativeTrees" instance=ExtResource("6_7mycd")]
 transform = Transform3D(0.69807327, 0, 0.051900327, 0, 0.6999999, 0, -0.051900327, 0, 0.69807327, -44.00466, 0, -75.021904)
 
-[node name="AppleTrees" type="Node3D" parent="." unique_id=1798418214]
+[node name="AppleTrees" type="Node3D" parent="."]
 
-[node name="BasketOriginAppleTree" parent="AppleTrees" unique_id=1225790030 instance=ExtResource("7_272bh")]
+[node name="BasketOriginAppleTree" parent="AppleTrees" instance=ExtResource("7_272bh")]
 transform = Transform3D(0.5929973, 0, -0.8052046, 0, 1, 0, 0.8052046, 0, 0.5929973, -3.7745132, 0, -102.441345)
 is_basket_present = true
 
-[node name="TargetAppleTree" parent="AppleTrees" unique_id=636798921 instance=ExtResource("7_272bh")]
+[node name="TargetAppleTree" parent="AppleTrees" instance=ExtResource("7_272bh")]
 transform = Transform3D(-0.50546163, 0, 0.86284906, 0, 1, 0, -0.86284906, 0, -0.50546163, 45.158703, 0, -153.64891)
 is_sheep_target = true
 
-[node name="WorldBoundaries" type="Node3D" parent="." unique_id=1023914353]
+[node name="WorldBoundaries" type="Node3D" parent="."]
 
-[node name="Edge" type="StaticBody3D" parent="WorldBoundaries" unique_id=1715733291 groups=["mirrorable_object"]]
+[node name="Edge" type="StaticBody3D" parent="WorldBoundaries" groups=["mirrorable_object"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.381905, 4.0903015, -5.823634)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=244647730]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9305582, 0, -0.36614394, 0, 1, 0, 0.36614394, 0, 0.9305582, -0.016105652, 0.8631234, 1.2843003)
 shape = SubResource("BoxShape3D_kek77")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1959533583]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.61002076, 0, -0.7923856, 0, 1, 0, 0.7923856, 0, 0.61002076, 6.061371, 0.86312413, -7.08375)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1434642930]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9982751, 0, -0.05871407, 0, 1, 0, 0.05871407, 0, 0.9982751, 10.249756, 0.86312413, -14.780824)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1333149509]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.97474587, 0, 0.22331819, 0, 1, 0, -0.22331819, 0, 0.97474587, 8.704277, 0.86312413, -24.391106)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1964420437]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.7326738, 0, 0.6805804, 0, 1, 0, -0.6805804, 0, 0.7326738, 4.3682632, 0.8631251, -32.98405)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=312700045]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.7326738, 0, 0.6805804, 0, 1, 0, -0.6805804, 0, 0.7326738, -2.3769684, 0.8631251, -40.24984)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1880772202]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9436279, 0, -0.33100873, 0, 1, 0, 0.33100873, 0, 0.9436279, -4.4025116, 0.86312413, -48.7359)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=778553196]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.97115105, 0, -0.23846588, 0, 1, 0, 0.23846588, 0, 0.97115105, -1.6716232, 0.86312413, -58.183475)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=974112242]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.97115105, 0, -0.23846588, 0, 1, 0, 0.23846588, 0, 0.97115105, 0.68564606, 0.8631251, -67.77332)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1789943541]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.97115105, 0, -0.23846588, 0, 1, 0, 0.23846588, 0, 0.97115105, 2.7168198, 0.8631251, -77.57914)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=654524099]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9797539, 0, -0.20020612, 0, 1, 0, 0.20020612, 0, 0.9797539, 4.771454, 0.8631251, -87.34347)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1556720028]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9990059, 0, -0.044578567, 0, 1, 0, 0.044578567, 0, 0.9990059, 6.010124, 0.8631251, -97.19232)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=196209337]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9950521, 0, 0.0993543, 0, 1, 0, -0.0993543, 0, 0.9950521, 5.82473, 0.86312413, -107.03059)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=767374984]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9770158, 0, 0.21316662, 0, 1, 0, -0.21316662, 0, 0.9770158, 4.3512573, 0.8631251, -116.84761)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1849243545]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9314946, 0, 0.3637551, 0, 1, 0, -0.3637551, 0, 0.9314946, 1.4756622, 0.8631251, -126.175606)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1050196500]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.95924, 0, 0.28259242, 0, 1, 0, -0.28259242, 0, 0.95924, -1.8704453, 0.86312604, -135.36342)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=490081009]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9737341, 0, 0.22768794, 0, 1, 0, -0.22768794, 0, 0.9737341, -4.4124985, 0.86312604, -144.61696)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=172530847]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.96830034, 0, 0.24978837, 0, 1, 0, -0.24978837, 0, 0.96830034, -6.8934402, 0.86312604, -154.20824)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D19" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=947565069]
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.9654544, 0, 0.26057172, 0, 1, 0, -0.26057172, 0, 0.9654544, -9.326569, 0.86312604, -163.41641)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D20" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1598827948]
+[node name="CollisionShape3D20" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.30572832, 0, -0.9521188, 0, 1, 0, 0.9521188, 0, 0.30572832, -5.329529, 0.86312604, -167.79196)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D21" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=381564439]
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.4125319, 0, -0.91094315, 0, 1, 0, 0.91094315, 0, 0.4125319, 3.6388245, 0.86312604, -171.29462)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D22" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1926923363]
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.1602427, 0, -0.9870776, 0, 1, 0, 0.9870776, 0, 0.1602427, 13.248497, 0.86312604, -174.04836)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D23" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1292166685]
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.0247809, 0, -0.99969286, 0, 1, 0, 0.99969286, 0, 0.0247809, 22.873089, 0.86312604, -174.97247)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D24" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1885339584]
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.0247809, 0, -0.99969286, 0, 1, 0, 0.99969286, 0, 0.0247809, 32.600132, 0.86312604, -175.10947)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D25" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=51286395]
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.32001758, 0, -0.9474116, 0, 1, 0, 0.9474116, 0, 0.32001758, 42.104538, 0.86312604, -176.7998)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D26" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1777395319]
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.50961196, 0, -0.8604044, 0, 1, 0, 0.8604044, 0, 0.50961196, 50.901318, 0.86312604, -180.90962)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D29" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1640999516]
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.93636614, 0, -0.35102484, 0, 1, 0, 0.35102484, 0, 0.93636614, 82.74872, 15.65904, -194.11996)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D52" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1916609065]
+[node name="CollisionShape3D52" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.42729464, 0, -0.9041126, 0, 1, 0, 0.9041126, 0, 0.42729464, 89.27575, 15.65904, -201.03569)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D53" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1481870686]
+[node name="CollisionShape3D53" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.44486994, 0, -0.8955953, 0, 1, 0, 0.8955953, 0, -0.44486994, 98.60095, 15.65904, -201.06873)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D54" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=723203184]
+[node name="CollisionShape3D54" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9742838, 0, -0.22532496, 0, 1, 0, 0.22532496, 0, -0.9742838, 104.50173, 15.65904, -194.07895)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D55" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1757313569]
+[node name="CollisionShape3D55" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 91.27047, 10.941679, -204.02817)
 shape = SubResource("BoxShape3D_ycdy4")
 
-[node name="CollisionShape3D27" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1939289623]
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(0.7637396, 0, -0.64552456, 0, 1, 0, 0.64552456, 0, 0.7637396, 57.96595, 0.863127, -186.97462)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D28" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=2036462812]
+[node name="CollisionShape3D28" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.99711806, 0, -0.07586619, 0, 1, 0, 0.07586619, 0, -0.99711806, 128.20204, 0.8631308, -184.47493)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D_wall" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1751614443]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 92.6687, 0.8631289, -189.5355)
+[node name="CollisionShape3D_wall" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 94.796814, 2.7135277, -189.5355)
 shape = SubResource("BoxShape3D_5vw27")
 
-[node name="CollisionShape3D30" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=898925023]
+[node name="CollisionShape3D30" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9986377, 0, 0.05217921, 0, 1, 0, -0.05217921, 0, -0.9986377, 128.40938, 0.82987905, -174.71535)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D31" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1776099362]
+[node name="CollisionShape3D31" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9999597, 0, -0.008970749, 0, 1, 0, 0.008970749, 0, -0.9999597, 128.40938, 0.82987905, -164.89125)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D32" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1690759663]
+[node name="CollisionShape3D32" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9651079, 0, -0.2618522, 0, 1, 0, 0.2618522, 0, -0.9651079, 129.92456, 0.82987905, -155.34662)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D33" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1339580363]
+[node name="CollisionShape3D33" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9497537, 0, -0.31299794, 0, 1, 0, 0.31299794, 0, -0.9497537, 132.71318, 0.82987905, -146.22166)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D34" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1435273176]
+[node name="CollisionShape3D34" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9497537, 0, -0.31299794, 0, 1, 0, 0.31299794, 0, -0.9497537, 135.75868, 0.82987905, -136.85449)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D35" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=708506331]
+[node name="CollisionShape3D35" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9497537, 0, -0.31299794, 0, 1, 0, 0.31299794, 0, -0.9497537, 138.91309, 0.82987905, -127.927376)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D36" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=620097458]
+[node name="CollisionShape3D36" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.82189554, 0, -0.569638, 0, 1, 0, 0.569638, 0, -0.82189554, 143.20984, 0.82987905, -119.44957)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D37" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1395540482]
+[node name="CollisionShape3D37" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.85463107, 0, -0.51923555, 0, 1, 0, 0.51923555, 0, -0.85463107, 148.48703, 0.82987905, -111.015205)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D38" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1242573088]
+[node name="CollisionShape3D38" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.697978, 0, -0.71611905, 0, 1, 0, 0.71611905, 0, -0.697978, 154.49963, 0.82987905, -103.507744)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D39" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1382029353]
+[node name="CollisionShape3D39" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.6241933, 0, -0.7812698, 0, 1, 0, 0.7812698, 0, -0.6241933, 161.81427, 0.82987905, -97.1427)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D40" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1922987013]
+[node name="CollisionShape3D40" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.50066495, 0, -0.865641, 0, 1, 0, 0.865641, 0, -0.50066495, 169.62854, 0.82988095, -91.7616)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D41" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1084799930]
+[node name="CollisionShape3D41" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9280767, 0, 0.37238854, 0, 1, 0, -0.37238854, 0, -0.9280767, 171.09052, 0.82988095, -85.396904)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D42" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1527078507]
+[node name="CollisionShape3D42" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.96713006, 0, 0.25428128, 0, 1, 0, -0.25428128, 0, -0.96713006, 168.00568, 0.8298805, -76.3399)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D43" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=2031591164]
+[node name="CollisionShape3D43" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9976291, 0, 0.06881634, 0, 1, 0, -0.06881634, 0, -0.9976291, 166.0036, 0.8298805, -66.698044)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D44" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1771584725]
+[node name="CollisionShape3D44" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9976291, 0, 0.06881634, 0, 1, 0, -0.06881634, 0, -0.9976291, 165.18678, 0.8298805, -57.202625)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D45" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1249476286]
+[node name="CollisionShape3D45" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9949368, 0, -0.10050051, 0, 1, 0, 0.10050051, 0, -0.9949368, 165.59152, 0.8298805, -47.64078)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D46" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=734782848]
+[node name="CollisionShape3D46" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.96677417, 0, -0.2556312, 0, 1, 0, 0.2556312, 0, -0.96677417, 166.94092, 0.8298805, -38.11915)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D47" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1294287730]
+[node name="CollisionShape3D47" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.96677417, 0, -0.2556312, 0, 1, 0, 0.2556312, 0, -0.96677417, 169.41922, 0.8298805, -28.340744)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D48" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1808214064]
+[node name="CollisionShape3D48" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9196365, 0, -0.3927704, 0, 1, 0, 0.3927704, 0, -0.9196365, 172.34235, 0.8298814, -18.820652)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D49" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1160880806]
+[node name="CollisionShape3D49" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.95010823, 0, -0.3119203, 0, 1, 0, 0.3119203, 0, -0.95010823, 175.28885, 0.8298814, -9.477247)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D50" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=1041026561]
+[node name="CollisionShape3D50" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.9194377, 0, -0.39323595, 0, 1, 0, 0.39323595, 0, -0.9194377, 178.50555, 0.8298814, -0.267375)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="CollisionShape3D51" type="CollisionShape3D" parent="WorldBoundaries/Edge" unique_id=273233771]
+[node name="CollisionShape3D51" type="CollisionShape3D" parent="WorldBoundaries/Edge"]
 transform = Transform3D(-0.8330178, 0, -0.5532461, 0, 1, 0, 0.5532461, 0, -0.8330178, 181.28723, 0.8298814, 5.362089)
 shape = SubResource("BoxShape3D_272bh")
 
-[node name="UserInterface" parent="." unique_id=1166253200 instance=ExtResource("13_ycdy4")]
+[node name="UserInterface" parent="." instance=ExtResource("13_ycdy4")]
 
 [connection signal="body_entered" from="Obstacles/Ramp/Area3D" to="Obstacles/Ramp" method="_on_area_3d_body_entered"]
 
