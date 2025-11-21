@@ -1,6 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjme8rpjdtxs5"]
+[gd_scene load_steps=10 format=3 uid="uid://bjme8rpjdtxs5"]
 
 [ext_resource type="Script" uid="uid://bxqxxyiwq6pni" path="res://nodes/user_interface.gd" id="1_tpf8c"]
+
+[sub_resource type="Theme" id="Theme_tpf8c"]
+default_font_size = 24
+
+[sub_resource type="Gradient" id="Gradient_tpf8c"]
+colors = PackedColorArray(0.10561416, 0.10561416, 0.10561416, 0.5882353, 0.6313726, 0.6313726, 0.6313726, 0.5882353)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_arvly"]
+gradient = SubResource("Gradient_tpf8c")
+fill_from = Vector2(1, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_kurd5"]
 font_size = 64
@@ -16,6 +26,9 @@ font_size = 32
 [sub_resource type="LabelSettings" id="LabelSettings_wlri3"]
 font_size = 48
 
+[sub_resource type="LabelSettings" id="LabelSettings_jhp4h"]
+font_size = 64
+
 [node name="UserInterface" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -24,7 +37,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme = SubResource("Theme_tpf8c")
 script = ExtResource("1_tpf8c")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_arvly")
 
 [node name="MainMenu" type="Control" parent="."]
 layout_mode = 1
@@ -146,7 +169,7 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 size_flags_vertical = 3
-text = "The battle between good and evil has reached a tipping point. In a daring maneuver, the citizens of light have concentrated all the realm's magical power into the Hope Diamond, and began using it to summon a mighty champion of light - you. In a terrible twist of fortunes, the evil denizens of the shadow realm have stolen the Hope Diamond to summon their own dark champion. Partially summoned on borrowed time, you are the last hope of the world. Can you learn the rules of the shadow realm, find the Hope Diamond and restore it to your pedestal before you crumble to dust?"
+text = "The battle between good and evil has reached a tipping point. In a daring maneuver, the citizens of light have concentrated all the realm's magical power into the Light Crystal, and began using it to summon a mighty champion of light - you. In a terrible twist of fortunes, the evil denizens of the shadow realm have stolen the Light Crystal to summon their own dark champion. Partially summoned on borrowed time, you are the last hope of the world. Can you learn the rules of the shadow realm, find the Light Crystal and restore it to your pedestal before you crumble to dust?"
 label_settings = SubResource("LabelSettings_tpf8c")
 autowrap_mode = 2
 
@@ -155,9 +178,9 @@ layout_mode = 2
 text = "Hit escape (\"esc\") to quit, WASD to move, move mouse to change angles"
 label_settings = SubResource("LabelSettings_arvly")
 
-[node name="ContinueButton" type="Button" parent="IntroText/MarginContainer/VBoxContainer"]
+[node name="ReturnButton" type="Button" parent="IntroText/MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Continue"
+text = "Return to Main Menu"
 
 [node name="TimerInfo" type="Control" parent="."]
 layout_mode = 1
@@ -223,6 +246,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 text = "<Filler>"
+label_settings = SubResource("LabelSettings_jhp4h")
 horizontal_alignment = 1
 
 [node name="MainMenuButton" type="Button" parent="FinishScreen/CenterContainer/VBoxContainer"]
@@ -238,7 +262,7 @@ text = "Quit"
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer/EasyButton" to="." method="_on_easy_button_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer3/MediumButton" to="." method="_on_medium_button_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer3/HardButton" to="." method="_on_hard_button_pressed"]
-[connection signal="pressed" from="IntroText/MarginContainer/VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="IntroText/MarginContainer/VBoxContainer/ReturnButton" to="." method="_on_continue_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="FinishScreen/CenterContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="FinishScreen/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

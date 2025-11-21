@@ -1,5 +1,6 @@
 extends Control
 
+@onready var background_texture : TextureRect = $TextureRect
 @onready var intro_text : Control = $IntroText
 @onready var main_menu : Control = $MainMenu
 @onready var timer_info : Control = $TimerInfo
@@ -51,17 +52,19 @@ func _set_timer_and_start_game(is_timer_on: bool = true):
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	main_menu.visible = false
 	get_tree().paused = false
+	background_texture.visible = false
+	
 	if is_timer_on:
 		TimerState.wait_time = timer.wait_time
-		timer_info.visible = true
 		timer.start()
 		TimerState.time_left = timer.time_left
+		timer_info.visible = true
 
 func end_game_screen(is_victorious: bool) -> void:
 	get_tree().paused = true	
 	timer.paused = true
 	Input.mouse_mode = Input.MOUSE_MODE_CONFINED
-
+	background_texture.visible = true
 	if is_victorious:
 		finish_screen.visible = true
 		finish_screen_label.text = "Success!"
