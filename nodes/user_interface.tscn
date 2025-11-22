@@ -134,6 +134,21 @@ text = "Hard Mode
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="HBoxContainer4" type="HBoxContainer" parent="MainMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="MainMenu/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="QuitButton" type="Button" parent="MainMenu/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Quit"
+
+[node name="Control" type="Control" parent="MainMenu/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="IntroText" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -175,10 +190,10 @@ autowrap_mode = 2
 
 [node name="Instructions" type="Label" parent="IntroText/MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Hit escape (\"esc\") to quit, WASD to move, move mouse to change angles"
+text = "Hit escape (\"esc\") to pause, WASD to move, move mouse to change angles"
 label_settings = SubResource("LabelSettings_arvly")
 
-[node name="ReturnButton" type="Button" parent="IntroText/MarginContainer/VBoxContainer"]
+[node name="MainMenuButton" type="Button" parent="IntroText/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Return to Main Menu"
 
@@ -257,12 +272,54 @@ text = "Main Menu"
 layout_mode = 2
 text = "Quit"
 
+[node name="PauseScreen" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="PauseScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseScreen/CenterContainer"]
+custom_minimum_size = Vector2(512, 0)
+layout_mode = 2
+
+[node name="FinishScreenLabel" type="Label" parent="PauseScreen/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Paused"
+label_settings = SubResource("LabelSettings_jhp4h")
+horizontal_alignment = 1
+
+[node name="MainMenuButton" type="Button" parent="PauseScreen/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="ContinueButton" type="Button" parent="PauseScreen/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Continue"
+
+[node name="QuitButton" type="Button" parent="PauseScreen/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer2/TutorialButton" to="." method="_on_tutorial_button_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer/InfiniteButton" to="." method="_on_infinite_button_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer/EasyButton" to="." method="_on_easy_button_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer3/MediumButton" to="." method="_on_medium_button_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer3/HardButton" to="." method="_on_hard_button_pressed"]
-[connection signal="pressed" from="IntroText/MarginContainer/VBoxContainer/ReturnButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HBoxContainer4/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="IntroText/MarginContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="FinishScreen/CenterContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="FinishScreen/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="PauseScreen/CenterContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="PauseScreen/CenterContainer/VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="PauseScreen/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
