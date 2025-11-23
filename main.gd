@@ -15,6 +15,7 @@ extends Node3D
 var mat : ShaderMaterial
 var sun_directional_light_mask_bit = 3
 var moon_directional_light_mask_bit = 4
+var is_on_day_side : bool
 
 func _ready():	
 	current_environment.environment = day_environment
@@ -33,7 +34,14 @@ func _ready():
 
 	
 func _process(_delta):
-	if main_camera.global_position.z <= 0:
+	var current_side = main_camera.global_position.z <= 0
+	if is_on_day_side != current_side:
+		is_on_day_side = current_side
+		_switch_environment()
+		_switch_music()
+	
+func _switch_environment() -> void:
+	if is_on_day_side:
 		mirror_plane.rotation.y = PI
 		backup_mirror_plane.rotation.y = PI
 		backup_mirror_plane.position.z = 0.5
@@ -55,6 +63,12 @@ func _process(_delta):
 		mirror_camera.environment = day_environment
 		mirror_camera.set_cull_mask_value(sun_directional_light_mask_bit, true) 
 		mirror_camera.set_cull_mask_value(moon_directional_light_mask_bit, false) 
+
+func _switch_music() -> void:
+	if is_on_day_side:
+		BackgroundMusic.switch_music("light")
+	else:
+		BackgroundMusic.switch_music("dark")
 
 func _get_all_children(node) -> Array:
 	var nodes : Array = []

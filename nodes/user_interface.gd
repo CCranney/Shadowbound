@@ -19,6 +19,7 @@ func _ready() -> void:
 	timer_label.text = str(timer.time_left)
 	get_tree().paused = true	
 	process_mode = Node.PROCESS_MODE_ALWAYS
+	BackgroundMusic.switch_music("main", true)
 	
 func _process(_delta: float) -> void:
 	timer_label.text = format_time(timer.time_left)
@@ -55,6 +56,7 @@ func _set_timer_and_start_game(is_timer_on: bool = true):
 	main_menu.visible = false
 	get_tree().paused = false
 	background_texture.visible = false
+	BackgroundMusic.switch_music("light", true)
 	
 	if is_timer_on:
 		TimerState.wait_time = timer.wait_time

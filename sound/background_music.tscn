@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://88cuu18kxs4m"]
+
+[ext_resource type="AudioStream" uid="uid://crav4kmsvdap1" path="res://sound/menu theme.wav" id="1_xucmb"]
+[ext_resource type="Script" uid="uid://cuupxnaeu43c3" path="res://sound/background_music.gd" id="2_asgyi"]
+[ext_resource type="AudioStream" uid="uid://dbgdffl4fsiop" path="res://sound/Light Theme Loop.wav" id="3_dfe1c"]
+[ext_resource type="AudioStream" uid="uid://d4g8p7fnlkybm" path="res://sound/Dark Theme Loop.wav" id="4_1d673"]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer"]
+process_mode = 3
+volume_db = -20.0
+script = ExtResource("2_asgyi")
+main_menu_music = ExtResource("1_xucmb")
+light_side_music = ExtResource("3_dfe1c")
+dark_side_music = ExtResource("4_1d673")
