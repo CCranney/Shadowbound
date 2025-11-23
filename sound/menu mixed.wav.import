@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://creygxvrvivd0"
+path="res://.godot/imported/menu mixed.wav-0deb24c3ef09c86be697515aa8235d57.sample"
+
+[deps]
+
+source_file="res://sound/menu mixed.wav"
+dest_files=["res://.godot/imported/menu mixed.wav-0deb24c3ef09c86be697515aa8235d57.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

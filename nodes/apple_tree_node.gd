@@ -2,7 +2,7 @@ extends StaticBody3D
 
 @onready var area_3d: Area3D = $Area3D
 @onready var basket_mesh: Node3D = $Basket
-
+@onready var audio_stream_player_3d : AudioStreamPlayer3D = $AudioStreamPlayer3D
 
 @export var is_sheep_target: bool = false
 @export var is_basket_present: bool = false:
@@ -12,7 +12,9 @@ extends StaticBody3D
 			basket_mesh.visible = new_value
 		if is_sheep_target:
 			NavigationServer3D.map_set_active(get_world_3d().navigation_map, new_value)
-
+		if not new_value:
+			audio_stream_player_3d.play()
+			
 func _ready() -> void:
 	basket_mesh.visible = is_basket_present
 	if is_sheep_target:

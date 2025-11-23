@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://b7hj4n6ikrbgy"]
 
 [ext_resource type="Script" uid="uid://c3e5yirlxdq2w" path="res://nodes/diamond_insertion.gd" id="1_gs13n"]
-[ext_resource type="AudioStream" uid="uid://cexhlb6ov2clm" path="res://sound/Crystal.wav" id="2_v3238"]
+[ext_resource type="AudioStream" uid="uid://da2bpidxsyafp" path="res://sound/Crystal.wav" id="2_v3238"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oe8r1"]
 
