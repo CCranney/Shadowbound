@@ -1,9 +1,13 @@
-[gd_scene load_steps=10 format=4 uid="uid://cstg4rttt83mf"]
+[gd_scene load_steps=14 format=4 uid="uid://cstg4rttt83mf"]
 
 [ext_resource type="Script" uid="uid://cldbhk80vvyf3" path="res://player.gd" id="1_u63mc"]
 [ext_resource type="PackedScene" uid="uid://fv4x0fu4jr0u" path="res://assets/AppleBasket.blend" id="2_bms3g"]
 [ext_resource type="PackedScene" uid="uid://56nporr4wxju" path="res://assets/DecayingPerson.blend" id="2_me0cc"]
 [ext_resource type="Script" uid="uid://14b1v5lx71vu" path="res://assets/decaying_person.gd" id="3_hqdnm"]
+[ext_resource type="AudioStream" uid="uid://dpgcx5gpktb1j" path="res://sound/break 1.wav" id="4_ejohg"]
+[ext_resource type="AudioStream" uid="uid://bg004l3lc10ii" path="res://sound/break 2.wav" id="5_qbdof"]
+[ext_resource type="AudioStream" uid="uid://dltppjdrq8e0w" path="res://sound/break 3.wav" id="6_hg0js"]
+[ext_resource type="AudioStream" uid="uid://bnwfr0v62k11c" path="res://sound/break 4.wav" id="7_4n5g4"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lquwl"]
 
@@ -50,6 +54,7 @@ script = ExtResource("1_u63mc")
 [node name="PersonMesh" parent="." instance=ExtResource("2_me0cc")]
 transform = Transform3D(-0.15, 0, 1.3113417e-08, 0, 0.15, 0, -1.3113417e-08, 0, -0.15, 0, 0.4, 0)
 script = ExtResource("3_hqdnm")
+break_noises = Array[AudioStreamWAV]([ExtResource("4_ejohg"), ExtResource("5_qbdof"), ExtResource("6_hg0js"), ExtResource("7_4n5g4")])
 
 [node name="Pelvis-rigid" parent="PersonMesh" index="0"]
 collision_layer = 4
@@ -105,6 +110,9 @@ mass = 0.01
 collision_layer = 4
 collision_mask = 5
 mass = 0.01
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="PersonMesh"]
+volume_db = -10.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_lquwl")

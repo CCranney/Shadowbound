@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://jyls84pp8xcd"]
+[gd_scene load_steps=37 format=4 uid="uid://jyls84pp8xcd"]
 
 [ext_resource type="PackedScene" uid="uid://bpsrjjj60rfai" path="res://assets/Shadowbound_assets.blend" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://b1ip3x0xeaqrb" path="res://main.gd" id="1_lquwl"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://pxvcs26gwr4q" path="res://nodes/apple_tree_node.tscn" id="7_272bh"]
 [ext_resource type="PackedScene" uid="uid://dvu3clkho12px" path="res://nodes/boulder.tscn" id="8_5vw27"]
 [ext_resource type="Script" uid="uid://cp8an2swpkide" path="res://ramp.gd" id="8_dg77c"]
+[ext_resource type="AudioStream" uid="uid://bllu8olh3u5x5" path="res://sound/stone grind.wav" id="9_w48qg"]
 [ext_resource type="PackedScene" uid="uid://bjme8rpjdtxs5" path="res://nodes/user_interface.tscn" id="13_ycdy4"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_kek77"]
@@ -603,6 +604,10 @@ shape = SubResource("ConvexPolygonShape3D_dg77c")
 [node name="WalkingRamp" type="CollisionShape3D" parent="Obstacles/Ramp/Area3D"]
 transform = Transform3D(1.0000005, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1.0000005, 0.033241272, 0.991, -0.04076004)
 shape = SubResource("ConvexPolygonShape3D_ycdy4")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Obstacles/Ramp"]
+stream = ExtResource("9_w48qg")
+volume_db = -10.0
 
 [node name="Boulder" parent="Obstacles" instance=ExtResource("8_5vw27")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.650436, 1.4125526, -51.484722)

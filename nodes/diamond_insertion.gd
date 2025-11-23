@@ -3,6 +3,7 @@ extends Area3D
 signal objective_fulfilled
 
 @onready var diamond_mesh: MeshInstance3D = $DiamondMesh
+@onready var audio_stream_player_3d : AudioStreamPlayer3D = $AudioStreamPlayer3D
 
 @export var is_final_objective := false
 @export var is_diamond_inserted: bool = false:
@@ -12,6 +13,8 @@ signal objective_fulfilled
 			diamond_mesh.visible = new_value
 		if is_final_objective and new_value:
 			objective_fulfilled.emit()
+		if not is_final_objective and not new_value:
+			audio_stream_player_3d.play()
 
 func _ready() -> void:
 	diamond_mesh.visible = is_diamond_inserted

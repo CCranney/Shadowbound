@@ -10,13 +10,8 @@ var is_moving: bool:
 		else:
 			audio_stream_player_3d.stop()
 
-		
 func _ready() -> void:
 	is_moving = false	
-
-func _on_area_3d_body_entered(body: Node3D) -> void:
-	if body.name.contains("Fence"):
-		freeze = true
 
 func _physics_process(_delta: float) -> void:
 	var check_is_moving = (linear_velocity != Vector3.ZERO and not freeze)

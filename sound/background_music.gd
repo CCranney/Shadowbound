@@ -3,6 +3,8 @@ extends AudioStreamPlayer
 @export var main_menu_music : AudioStreamWAV
 @export var light_side_music : AudioStreamWAV
 @export var dark_side_music : AudioStreamWAV
+@export var win_music : AudioStreamWAV
+@export var lose_music : AudioStreamWAV
 	
 func switch_music(type: String, from_start:bool = false) -> void:
 	var playback_position = get_playback_position()
@@ -13,8 +15,11 @@ func switch_music(type: String, from_start:bool = false) -> void:
 		stream = dark_side_music
 	elif type == "main":
 		stream = main_menu_music
+	elif type == "win":
+		stream = win_music
+	elif type == "lose":
+		stream = lose_music
 		
 	if from_start:
 		playback_position = 0.0
 	play(playback_position)
-	print(playback_position)

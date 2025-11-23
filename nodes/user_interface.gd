@@ -72,10 +72,13 @@ func end_game_screen(is_victorious: bool) -> void:
 	if is_victorious:
 		finish_screen.visible = true
 		finish_screen_label.text = "Success!"
+		BackgroundMusic.switch_music("win", true)
 	else:
 		finish_screen.visible = true
 		finish_screen_label.text = "Game Over"
 		timer_info.visible = false
+		BackgroundMusic.switch_music("lose", true)
+
 
 func _on_timer_timeout() -> void:
 	end_game_screen(false)

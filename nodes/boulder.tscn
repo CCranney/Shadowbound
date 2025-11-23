@@ -1,4 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dvu3clkho12px"]
+[gd_scene load_steps=7 format=3 uid="uid://dvu3clkho12px"]
+
+[ext_resource type="Script" uid="uid://buvckanls0u02" path="res://nodes/boulder.gd" id="1_4laoo"]
+[ext_resource type="AudioStream" uid="uid://bllu8olh3u5x5" path="res://sound/stone grind.wav" id="2_mixp6"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ysltr"]
 rough = true
@@ -11,14 +14,19 @@ material = SubResource("StandardMaterial3D_ysltr")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_4laoo"]
 
-[node name="Boulder" type="RigidBody3D" unique_id=932097875 groups=["mirrorable_object"]]
+[node name="Boulder" type="RigidBody3D" groups=["mirrorable_object"]]
 mass = 0.25
 physics_material_override = SubResource("PhysicsMaterial_ysltr")
+script = ExtResource("1_4laoo")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1005769580]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
 mesh = SubResource("SphereMesh_ysltr")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1843381880]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
 shape = SubResource("SphereShape3D_4laoo")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_mixp6")
+volume_db = -10.0

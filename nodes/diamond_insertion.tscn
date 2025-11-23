@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=4 uid="uid://b7hj4n6ikrbgy"]
+[gd_scene load_steps=8 format=4 uid="uid://b7hj4n6ikrbgy"]
 
 [ext_resource type="Script" uid="uid://c3e5yirlxdq2w" path="res://nodes/diamond_insertion.gd" id="1_gs13n"]
+[ext_resource type="AudioStream" uid="uid://cexhlb6ov2clm" path="res://sound/Crystal.wav" id="2_v3238"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oe8r1"]
 
@@ -65,5 +66,8 @@ light_energy = 5.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CylinderShape3D_kek77")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_v3238")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

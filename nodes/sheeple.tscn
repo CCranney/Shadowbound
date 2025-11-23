@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cny6qsfcd5sq2"]
+[gd_scene load_steps=8 format=3 uid="uid://cny6qsfcd5sq2"]
 
 [ext_resource type="Script" uid="uid://c5n5s5hvu0ag4" path="res://nodes/sheeple.gd" id="1_4t08y"]
+[ext_resource type="AudioStream" uid="uid://26gxa0esyb8x" path="res://sound/baah 1.wav" id="2_cwjol"]
 [ext_resource type="PackedScene" uid="uid://cnkuvyo1kmtis" path="res://assets/Sheep.blend" id="2_urs1v"]
+[ext_resource type="AudioStream" uid="uid://b7e53dothp1y4" path="res://sound/baah 2.wav" id="3_q1t5o"]
+[ext_resource type="AudioStream" uid="uid://ct23kcxjgabhk" path="res://sound/baah 3.wav" id="4_me4i5"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_kb2a3"]
 
@@ -12,6 +15,7 @@ size = Vector3(1, 1, 2)
 mass = 0.01
 physics_material_override = SubResource("PhysicsMaterial_kb2a3")
 script = ExtResource("1_4t08y")
+sheep_noises = Array[AudioStreamWAV]([ExtResource("2_cwjol"), ExtResource("3_q1t5o"), ExtResource("4_me4i5")])
 
 [node name="Sheep" parent="." instance=ExtResource("2_urs1v")]
 transform = Transform3D(0.005646847, 0, 0.44996455, 0, 0.45, 0, -0.44996455, 0, 0.005646847, 0, 0.19703001, 0)
@@ -20,3 +24,12 @@ transform = Transform3D(0.005646847, 0, 0.44996455, 0, 0.45, 0, -0.44996455, 0, 
 shape = SubResource("BoxShape3D_4t08y")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+volume_db = -10.0
+
+[node name="WaitToBleetTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="WaitToBleetTimer" to="." method="_on_wait_to_bleet_timer_timeout"]
